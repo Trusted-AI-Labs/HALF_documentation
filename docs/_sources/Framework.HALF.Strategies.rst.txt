@@ -1,0 +1,26 @@
+Framework.HALF.Strategies
+=================================
+
+.. automodule:: Framework.HALF.Strategies
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+Submodules
+----------
+
+Framework.HALF.Strategies.DummyStrategy module
+----------------------------------------------
+
+.. automodule:: Framework.HALF.Strategies.DummyStrategy
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+Framework.HALF.Strategies.wrap\_distil\_util module
+---------------------------------------------------
+
+.. automodule:: Framework.HALF.Strategies.wrap_distil_util
+   :members:
+   :undoc-members:
+   :show-inheritance:

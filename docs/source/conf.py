@@ -33,8 +33,7 @@ extensions = [
     'sphinx.ext.napoleon',
     'sphinx.ext.viewcode',
     'recommonmark',
-    'sphinx_markdown_tables',
-    'sphinx.ext.githubpages' 
+    'sphinx_markdown_tables'
 ]
 
 autosummary_generate = True

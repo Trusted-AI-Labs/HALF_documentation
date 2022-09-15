@@ -1,0 +1,23 @@
+Framework.Extensions
+==============================
+
+.. py:module:: Framework.Extensions
+
+Submodules
+----------
+
+Framework.Extensions.Dataset module
+-----------------------------------
+
+.. automodule:: Framework.Extensions.Dataset
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+Framework.Extensions.Model module
+---------------------------------
+
+.. automodule:: Framework.Extensions.Model
+   :members:
+   :undoc-members:
+   :show-inheritance:

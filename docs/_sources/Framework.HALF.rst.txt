@@ -1,0 +1,18 @@
+Framework.HALF
+========================
+
+.. py:module:: Framework.HALF
+
+Subpackages
+-----------
+
+.. toctree::
+   :maxdepth: 4
+
+   Framework.HALF.Commons
+   Framework.HALF.Delegates
+   Framework.HALF.Hooks
+   Framework.HALF.Interfaces
+   Framework.HALF.Oracle
+   Framework.HALF.Strategies
+   Framework.HALF.Utils

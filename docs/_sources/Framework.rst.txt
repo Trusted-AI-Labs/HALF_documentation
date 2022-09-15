@@ -1,0 +1,29 @@
+Framework
+===================
+
+.. py:module:: Framework
+
+
+.. toctree::
+   :maxdepth: 4
+
+   Framework.Extensions
+
+Submodules
+----------
+
+Framework.benchmark module
+--------------------------
+
+.. automodule:: Framework.benchmark
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+Framework.main module
+---------------------
+
+.. automodule:: Framework.main
+   :members:
+   :undoc-members:
+   :show-inheritance:

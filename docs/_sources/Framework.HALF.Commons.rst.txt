@@ -1,0 +1,31 @@
+Framework.HALF.Commons
+================================
+
+.. py:module:: Framework.HALF.Commons
+
+Submodules
+----------
+
+Framework.HALF.Commons.SingletonMeta module
+-------------------------------------------
+
+.. automodule:: Framework.HALF.Commons.SingletonMeta
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+Framework.HALF.Commons.const module
+-----------------------------------
+
+.. automodule:: Framework.HALF.Commons.const
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+Framework.HALF.Commons.data module
+----------------------------------
+
+.. automodule:: Framework.HALF.Commons.data
+   :members:
+   :undoc-members:
+   :show-inheritance:

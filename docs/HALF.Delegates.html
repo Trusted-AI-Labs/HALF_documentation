@@ -206,14 +206,117 @@
         <article role="main">
           <section id="module-HALF.Delegates">
 <span id="half-delegates"></span><h1>HALF.Delegates<a class="headerlink" href="#module-HALF.Delegates" title="Permalink to this heading">#</a></h1>
-<section id="half-delegates-datasetincreasedelegate">
-<h2>HALF.Delegates.DatasetIncreaseDelegate<a class="headerlink" href="#half-delegates-datasetincreasedelegate" title="Permalink to this heading">#</a></h2>
+<section id="module-HALF.Delegates.DatasetIncreaseDelegate">
+<span id="half-delegates-datasetincreasedelegate"></span><h2>HALF.Delegates.DatasetIncreaseDelegate<a class="headerlink" href="#module-HALF.Delegates.DatasetIncreaseDelegate" title="Permalink to this heading">#</a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="HALF.Delegates.DatasetIncreaseDelegate.DatasetIncreaseDelegate">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">HALF.Delegates.DatasetIncreaseDelegate.</span></span><span class="sig-name descname"><span class="pre">DatasetIncreaseDelegate</span></span><a class="reference internal" href="_modules/HALF/Delegates/DatasetIncreaseDelegate.html#DatasetIncreaseDelegate"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#HALF.Delegates.DatasetIncreaseDelegate.DatasetIncreaseDelegate" title="Permalink to this definition">#</a></dt>
+<dd><p>Bases: <a class="reference internal" href="HALF.Interfaces.html#HALF.Interfaces.IDelegate.IDelegate" title="HALF.Interfaces.IDelegate.IDelegate"><code class="xref py py-class docutils literal notranslate"><span class="pre">IDelegate</span></code></a></p>
+<p>Class managing the selection of queries, handing them to the Oracle and the subsequent update of the
+labelled and unlabelled datasets</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="HALF.Delegates.DatasetIncreaseDelegate.DatasetIncreaseDelegate.__init__">
+<span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">configAL</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">model</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dataset_manager</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">oracle</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/HALF/Delegates/DatasetIncreaseDelegate.html#DatasetIncreaseDelegate.__init__"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#HALF.Delegates.DatasetIncreaseDelegate.DatasetIncreaseDelegate.__init__" title="Permalink to this definition">#</a></dt>
+<dd><p>Class managing the selection of queries, ending them to the Oracle and the subsequent update of the labelled and unlabelled datasets</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>configAL</strong> (<a class="reference internal" href="HALF.Utils.html#HALF.Utils.ConfigActiveLearner.ConfigActiveLearner" title="HALF.Utils.ConfigActiveLearner.ConfigActiveLearner"><em>ConfigActiveLearner</em></a>) – confif containing all parameters</p></li>
+<li><p><strong>model</strong> (<em>pl.LightningModule</em>) – model to train in the ative learning loop</p></li>
+<li><p><strong>dataset_manager</strong> (<a class="reference internal" href="HALF.Utils.html#HALF.Utils.ALDatasetManager.ALDatasetManager" title="HALF.Utils.ALDatasetManager.ALDatasetManager"><em>ALDatasetManager</em></a>) – object manipulating the datasets</p></li>
+<li><p><strong>oracle</strong> (<a class="reference internal" href="HALF.Interfaces.html#HALF.Interfaces.IOracle.IOracle" title="HALF.Interfaces.IOracle.IOracle"><em>IOracle</em></a>) – object giving the labels at each iteration of the active learning loop</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="HALF.Delegates.DatasetIncreaseDelegate.DatasetIncreaseDelegate.run">
+<span class="sig-name descname"><span class="pre">run</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/HALF/Delegates/DatasetIncreaseDelegate.html#DatasetIncreaseDelegate.run"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#HALF.Delegates.DatasetIncreaseDelegate.DatasetIncreaseDelegate.run" title="Permalink to this definition">#</a></dt>
+<dd><p>Select the indices of the samples to label with respect to their indices in the unlabelled dataset and update the datasets to move the samples
+from the unlabelled dataset to the labelled dataset</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>list of indices of samples to labels with respect to their order in the unlabelled dataset</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>List[int]</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
 </section>
-<section id="half-delegates-datasettestingdelegate">
-<h2>HALF.Delegates.DatasetTestingDelegate<a class="headerlink" href="#half-delegates-datasettestingdelegate" title="Permalink to this heading">#</a></h2>
+<section id="module-HALF.Delegates.DatasetTestingDelegate">
+<span id="half-delegates-datasettestingdelegate"></span><h2>HALF.Delegates.DatasetTestingDelegate<a class="headerlink" href="#module-HALF.Delegates.DatasetTestingDelegate" title="Permalink to this heading">#</a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="HALF.Delegates.DatasetTestingDelegate.DatasetTestingDelegate">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">HALF.Delegates.DatasetTestingDelegate.</span></span><span class="sig-name descname"><span class="pre">DatasetTestingDelegate</span></span><a class="reference internal" href="_modules/HALF/Delegates/DatasetTestingDelegate.html#DatasetTestingDelegate"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#HALF.Delegates.DatasetTestingDelegate.DatasetTestingDelegate" title="Permalink to this definition">#</a></dt>
+<dd><p>Bases: <a class="reference internal" href="HALF.Interfaces.html#HALF.Interfaces.IDelegate.IDelegate" title="HALF.Interfaces.IDelegate.IDelegate"><code class="xref py py-class docutils literal notranslate"><span class="pre">IDelegate</span></code></a></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="HALF.Delegates.DatasetTestingDelegate.DatasetTestingDelegate.__init__">
+<span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">model</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dataset_manager</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">config_dl</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">trainer</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/HALF/Delegates/DatasetTestingDelegate.html#DatasetTestingDelegate.__init__"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#HALF.Delegates.DatasetTestingDelegate.DatasetTestingDelegate.__init__" title="Permalink to this definition">#</a></dt>
+<dd><p>Class managing the evaluation of the performance of the model on the test set</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>model</strong> (<em>pl.LightningModule</em>) – model to evaluate</p></li>
+<li><p><strong>dataset_manager</strong> (<a class="reference internal" href="HALF.Utils.html#HALF.Utils.ALDatasetManager.ALDatasetManager" title="HALF.Utils.ALDatasetManager.ALDatasetManager"><em>ALDatasetManager</em></a>) – object where the test set is contained</p></li>
+<li><p><strong>config_dl</strong> (<em>dict</em><em>[</em><em>str</em><em>, </em><em>Union</em><em>[</em><em>int</em><em>,</em><em>str</em><em>,</em><em>float</em><em>]</em><em>]</em>) – configuration of the model for evaluation</p></li>
+<li><p><strong>trainer</strong> (<em>pl.Trainer</em>) – wrapper for the model training and evaluation</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="HALF.Delegates.DatasetTestingDelegate.DatasetTestingDelegate.run">
+<span class="sig-name descname"><span class="pre">run</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/HALF/Delegates/DatasetTestingDelegate.html#DatasetTestingDelegate.run"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#HALF.Delegates.DatasetTestingDelegate.DatasetTestingDelegate.run" title="Permalink to this definition">#</a></dt>
+<dd><p>Evaluate the performance of a model</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>results of the evaluation of the model</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>_EVALUATE_OUTPUT</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
 </section>
-<section id="half-delegates-modeltrainingdelegate-module">
-<h2>HALF.Delegates.ModelTrainingDelegate module<a class="headerlink" href="#half-delegates-modeltrainingdelegate-module" title="Permalink to this heading">#</a></h2>
+<section id="module-HALF.Delegates.ModelTrainingDelegate">
+<span id="half-delegates-modeltrainingdelegate-module"></span><h2>HALF.Delegates.ModelTrainingDelegate module<a class="headerlink" href="#module-HALF.Delegates.ModelTrainingDelegate" title="Permalink to this heading">#</a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="HALF.Delegates.ModelTrainingDelegate.ModelTrainingDelegate">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">HALF.Delegates.ModelTrainingDelegate.</span></span><span class="sig-name descname"><span class="pre">ModelTrainingDelegate</span></span><a class="reference internal" href="_modules/HALF/Delegates/ModelTrainingDelegate.html#ModelTrainingDelegate"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#HALF.Delegates.ModelTrainingDelegate.ModelTrainingDelegate" title="Permalink to this definition">#</a></dt>
+<dd><p>Bases: <a class="reference internal" href="HALF.Interfaces.html#HALF.Interfaces.IDelegate.IDelegate" title="HALF.Interfaces.IDelegate.IDelegate"><code class="xref py py-class docutils literal notranslate"><span class="pre">IDelegate</span></code></a></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="HALF.Delegates.ModelTrainingDelegate.ModelTrainingDelegate.__init__">
+<span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">model</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dataset_manager</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">config_dl</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">trainer</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/HALF/Delegates/ModelTrainingDelegate.html#ModelTrainingDelegate.__init__"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#HALF.Delegates.ModelTrainingDelegate.ModelTrainingDelegate.__init__" title="Permalink to this definition">#</a></dt>
+<dd><p>Class managing the training of the model with the labelled set</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>model</strong> (<em>pl.LightningModule</em>) – model to train</p></li>
+<li><p><strong>dataset_manager</strong> (<a class="reference internal" href="HALF.Utils.html#HALF.Utils.ALDatasetManager.ALDatasetManager" title="HALF.Utils.ALDatasetManager.ALDatasetManager"><em>ALDatasetManager</em></a>) – object where the labelled set is contained</p></li>
+<li><p><strong>config_dl</strong> (<em>dict</em><em>[</em><em>str</em><em>, </em><em>Union</em><em>[</em><em>int</em><em>,</em><em>str</em><em>,</em><em>float</em><em>]</em><em>]</em>) – configuration of the model for training</p></li>
+<li><p><strong>trainer</strong> (<em>pl.Trainer</em>) – wrapper for the model training and evaluation</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="HALF.Delegates.ModelTrainingDelegate.ModelTrainingDelegate.run">
+<span class="sig-name descname"><span class="pre">run</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/HALF/Delegates/ModelTrainingDelegate.html#ModelTrainingDelegate.run"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#HALF.Delegates.ModelTrainingDelegate.ModelTrainingDelegate.run" title="Permalink to this definition">#</a></dt>
+<dd><p>Run the training</p>
+</dd></dl>
+
+</dd></dl>
+
 </section>
 </section>
 
@@ -275,9 +378,9 @@
           <div class="toc-tree">
             <ul>
 <li><a class="reference internal" href="#">HALF.Delegates</a><ul>
-<li><a class="reference internal" href="#half-delegates-datasetincreasedelegate">HALF.Delegates.DatasetIncreaseDelegate</a></li>
-<li><a class="reference internal" href="#half-delegates-datasettestingdelegate">HALF.Delegates.DatasetTestingDelegate</a></li>
-<li><a class="reference internal" href="#half-delegates-modeltrainingdelegate-module">HALF.Delegates.ModelTrainingDelegate module</a></li>
+<li><a class="reference internal" href="#module-HALF.Delegates.DatasetIncreaseDelegate">HALF.Delegates.DatasetIncreaseDelegate</a></li>
+<li><a class="reference internal" href="#module-HALF.Delegates.DatasetTestingDelegate">HALF.Delegates.DatasetTestingDelegate</a></li>
+<li><a class="reference internal" href="#module-HALF.Delegates.ModelTrainingDelegate">HALF.Delegates.ModelTrainingDelegate module</a></li>
 </ul>
 </li>
 </ul>

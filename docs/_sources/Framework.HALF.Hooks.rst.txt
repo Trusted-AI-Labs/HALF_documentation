@@ -1,0 +1,42 @@
+Framework.HALF.Hooks
+============================
+
+.. automodule:: Framework.HALF.Hooks
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+Submodules
+----------
+
+Framework.HALF.Hooks.LoadModelHook module
+-----------------------------------------
+
+.. automodule:: Framework.HALF.Hooks.LoadModelHook
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+Framework.HALF.Hooks.SaveModelHook module
+-----------------------------------------
+
+.. automodule:: Framework.HALF.Hooks.SaveModelHook
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+Framework.HALF.Hooks.TestAccuracyLoggerHook module
+--------------------------------------------------
+
+.. automodule:: Framework.HALF.Hooks.TestAccuracyLoggerHook
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+Framework.HALF.Hooks.WriteAccuracyLogsHook module
+-------------------------------------------------
+
+.. automodule:: Framework.HALF.Hooks.WriteAccuracyLogsHook
+   :members:
+   :undoc-members:
+   :show-inheritance:

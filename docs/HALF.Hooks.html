@@ -204,22 +204,196 @@
           </label>
         </div>
         <article role="main">
-          <section id="half-hooks">
-<h1>HALF.Hooks<a class="headerlink" href="#half-hooks" title="Permalink to this heading">#</a></h1>
-<section id="half-hooks-loadmodelhook">
-<h2>HALF.Hooks.LoadModelHook<a class="headerlink" href="#half-hooks-loadmodelhook" title="Permalink to this heading">#</a></h2>
+          <section id="module-HALF.Hooks">
+<span id="half-hooks"></span><h1>HALF.Hooks<a class="headerlink" href="#module-HALF.Hooks" title="Permalink to this heading">#</a></h1>
+<section id="module-HALF.Hooks.LoadModelHook">
+<span id="half-hooks-loadmodelhook"></span><h2>HALF.Hooks.LoadModelHook<a class="headerlink" href="#module-HALF.Hooks.LoadModelHook" title="Permalink to this heading">#</a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="HALF.Hooks.LoadModelHook.LoadModelHook">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">HALF.Hooks.LoadModelHook.</span></span><span class="sig-name descname"><span class="pre">LoadModelHook</span></span><a class="reference internal" href="_modules/HALF/Hooks/LoadModelHook.html#LoadModelHook"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#HALF.Hooks.LoadModelHook.LoadModelHook" title="Permalink to this definition">#</a></dt>
+<dd><p>Bases: <a class="reference internal" href="HALF.Interfaces.html#HALF.Interfaces.IHook.IHook" title="HALF.Interfaces.IHook.IHook"><code class="xref py py-class docutils literal notranslate"><span class="pre">IHook</span></code></a></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="HALF.Hooks.LoadModelHook.LoadModelHook.__init__">
+<span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">path</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/HALF/Hooks/LoadModelHook.html#LoadModelHook.__init__"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#HALF.Hooks.LoadModelHook.LoadModelHook.__init__" title="Permalink to this definition">#</a></dt>
+<dd><p>Hook to load model parameters from disk
+Note: if path is provided name will be ignored</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>name</strong> (<em>str</em><em>, </em><em>optional</em>) – name of the model in the config model_path dir. Defaults to None.</p></li>
+<li><p><strong>path</strong> (<em>str</em><em>, </em><em>optional</em>) – path to the model. Defaults to None.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="HALF.Hooks.LoadModelHook.LoadModelHook.apply">
+<span class="sig-name descname"><span class="pre">apply</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">al</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/HALF/Hooks/LoadModelHook.html#LoadModelHook.apply"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#HALF.Hooks.LoadModelHook.LoadModelHook.apply" title="Permalink to this definition">#</a></dt>
+<dd><p>Load model parameters from disk and assign them to <cite>al</cite>’s model</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>al</strong> (<a class="reference internal" href="HALF.Interfaces.html#HALF.Interfaces.IHook.ActiveLearner" title="HALF.Interfaces.IHook.ActiveLearner"><em>ActiveLearner</em></a>) – The ActiveLearner whose model weights should be loaded from disk</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="HALF.Hooks.LoadModelHook.LoadModelHook.get_loading_path">
+<span class="sig-name descname"><span class="pre">get_loading_path</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/HALF/Hooks/LoadModelHook.html#LoadModelHook.get_loading_path"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#HALF.Hooks.LoadModelHook.LoadModelHook.get_loading_path" title="Permalink to this definition">#</a></dt>
+<dd><p>Returns path from which the model will be loaded</p>
+<dl class="field-list simple">
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
 </section>
-<section id="half-hooks-savemodelhook">
-<h2>HALF.Hooks.SaveModelHook<a class="headerlink" href="#half-hooks-savemodelhook" title="Permalink to this heading">#</a></h2>
+<section id="module-HALF.Hooks.SaveModelHook">
+<span id="half-hooks-savemodelhook"></span><h2>HALF.Hooks.SaveModelHook<a class="headerlink" href="#module-HALF.Hooks.SaveModelHook" title="Permalink to this heading">#</a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="HALF.Hooks.SaveModelHook.SaveModelHook">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">HALF.Hooks.SaveModelHook.</span></span><span class="sig-name descname"><span class="pre">SaveModelHook</span></span><a class="reference internal" href="_modules/HALF/Hooks/SaveModelHook.html#SaveModelHook"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#HALF.Hooks.SaveModelHook.SaveModelHook" title="Permalink to this definition">#</a></dt>
+<dd><p>Bases: <a class="reference internal" href="HALF.Interfaces.html#HALF.Interfaces.IHook.IHook" title="HALF.Interfaces.IHook.IHook"><code class="xref py py-class docutils literal notranslate"><span class="pre">IHook</span></code></a></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="HALF.Hooks.SaveModelHook.SaveModelHook.__init__">
+<span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">saving_dir</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">with_time</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/HALF/Hooks/SaveModelHook.html#SaveModelHook.__init__"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#HALF.Hooks.SaveModelHook.SaveModelHook.__init__" title="Permalink to this definition">#</a></dt>
+<dd><p>Saves model parameters to disk</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>saving_dir</strong> (<em>str</em>) – output directory</p></li>
+<li><p><strong>name</strong> (<em>str</em><em>, </em><em>optional</em>) – output name for the model. Defaults to None.</p></li>
+<li><p><strong>with_time</strong> (<em>bool</em><em>, </em><em>optional</em>) – if True, prepend the current time to the output filename. Defaults to False.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="HALF.Hooks.SaveModelHook.SaveModelHook.apply">
+<span class="sig-name descname"><span class="pre">apply</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">al</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/HALF/Hooks/SaveModelHook.html#SaveModelHook.apply"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#HALF.Hooks.SaveModelHook.SaveModelHook.apply" title="Permalink to this definition">#</a></dt>
+<dd><p>Save model parameters to disk</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>al</strong> (<a class="reference internal" href="HALF.Interfaces.html#HALF.Interfaces.IHook.ActiveLearner" title="HALF.Interfaces.IHook.ActiveLearner"><em>ActiveLearner</em></a>) – The ActiveLearner whose model parameters should be saved to disk</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="HALF.Hooks.SaveModelHook.SaveModelHook.get_saving_path">
+<span class="sig-name descname"><span class="pre">get_saving_path</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/HALF/Hooks/SaveModelHook.html#SaveModelHook.get_saving_path"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#HALF.Hooks.SaveModelHook.SaveModelHook.get_saving_path" title="Permalink to this definition">#</a></dt>
+<dd><p>Builds the save path</p>
+<dl class="field-list simple">
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
 </section>
-<section id="half-hooks-setuptensorboardhook">
-<h2>HALF.Hooks.SetupTensorboardHook<a class="headerlink" href="#half-hooks-setuptensorboardhook" title="Permalink to this heading">#</a></h2>
+<section id="module-HALF.Hooks.SetupTensorboardHook">
+<span id="half-hooks-setuptensorboardhook"></span><h2>HALF.Hooks.SetupTensorboardHook<a class="headerlink" href="#module-HALF.Hooks.SetupTensorboardHook" title="Permalink to this heading">#</a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="HALF.Hooks.SetupTensorboardHook.SetupTensorboardHook">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">HALF.Hooks.SetupTensorboardHook.</span></span><span class="sig-name descname"><span class="pre">SetupTensorboardHook</span></span><a class="reference internal" href="_modules/HALF/Hooks/SetupTensorboardHook.html#SetupTensorboardHook"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#HALF.Hooks.SetupTensorboardHook.SetupTensorboardHook" title="Permalink to this definition">#</a></dt>
+<dd><p>Bases: <a class="reference internal" href="HALF.Interfaces.html#HALF.Interfaces.IHook.IHook" title="HALF.Interfaces.IHook.IHook"><code class="xref py py-class docutils literal notranslate"><span class="pre">IHook</span></code></a></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="HALF.Hooks.SetupTensorboardHook.SetupTensorboardHook.__init__">
+<span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">experiment_name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'experiment_name'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dir_path</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">with_time</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/HALF/Hooks/SetupTensorboardHook.html#SetupTensorboardHook.__init__"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#HALF.Hooks.SetupTensorboardHook.SetupTensorboardHook.__init__" title="Permalink to this definition">#</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>experiment_name</strong> (<em>str</em>) – </p></li>
+<li><p><strong>dir_path</strong> (<em>Optional</em><em>[</em><em>str</em><em>]</em>) – </p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="HALF.Hooks.SetupTensorboardHook.SetupTensorboardHook.apply">
+<span class="sig-name descname"><span class="pre">apply</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">al</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/HALF/Hooks/SetupTensorboardHook.html#SetupTensorboardHook.apply"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#HALF.Hooks.SetupTensorboardHook.SetupTensorboardHook.apply" title="Permalink to this definition">#</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>al</strong> (<a class="reference internal" href="HALF.Utils.html#HALF.Utils.ActiveLearner.ActiveLearner" title="HALF.Utils.ActiveLearner.ActiveLearner"><em>ActiveLearner</em></a>) – </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="HALF.Hooks.SetupTensorboardHook.SetupTensorboardHook.get_experiment_name">
+<span class="sig-name descname"><span class="pre">get_experiment_name</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/HALF/Hooks/SetupTensorboardHook.html#SetupTensorboardHook.get_experiment_name"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#HALF.Hooks.SetupTensorboardHook.SetupTensorboardHook.get_experiment_name" title="Permalink to this definition">#</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
 </section>
-<section id="half-hooks-testaccuracyloggerhook">
-<h2>HALF.Hooks.TestAccuracyLoggerHook<a class="headerlink" href="#half-hooks-testaccuracyloggerhook" title="Permalink to this heading">#</a></h2>
+<section id="module-HALF.Hooks.TestAccuracyLoggerHook">
+<span id="half-hooks-testaccuracyloggerhook"></span><h2>HALF.Hooks.TestAccuracyLoggerHook<a class="headerlink" href="#module-HALF.Hooks.TestAccuracyLoggerHook" title="Permalink to this heading">#</a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="HALF.Hooks.TestAccuracyLoggerHook.TestAccuracyLoggerHook">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">HALF.Hooks.TestAccuracyLoggerHook.</span></span><span class="sig-name descname"><span class="pre">TestAccuracyLoggerHook</span></span><a class="reference internal" href="_modules/HALF/Hooks/TestAccuracyLoggerHook.html#TestAccuracyLoggerHook"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#HALF.Hooks.TestAccuracyLoggerHook.TestAccuracyLoggerHook" title="Permalink to this definition">#</a></dt>
+<dd><p>Bases: <a class="reference internal" href="HALF.Interfaces.html#HALF.Interfaces.IHook.IHook" title="HALF.Interfaces.IHook.IHook"><code class="xref py py-class docutils literal notranslate"><span class="pre">IHook</span></code></a></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="HALF.Hooks.TestAccuracyLoggerHook.TestAccuracyLoggerHook.__init__">
+<span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/HALF/Hooks/TestAccuracyLoggerHook.html#TestAccuracyLoggerHook.__init__"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#HALF.Hooks.TestAccuracyLoggerHook.TestAccuracyLoggerHook.__init__" title="Permalink to this definition">#</a></dt>
+<dd><p>Updates test accuracy logs</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="HALF.Hooks.TestAccuracyLoggerHook.TestAccuracyLoggerHook.apply">
+<span class="sig-name descname"><span class="pre">apply</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">al</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/HALF/Hooks/TestAccuracyLoggerHook.html#TestAccuracyLoggerHook.apply"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#HALF.Hooks.TestAccuracyLoggerHook.TestAccuracyLoggerHook.apply" title="Permalink to this definition">#</a></dt>
+<dd><p>Log test accuracy</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>al</strong> (<a class="reference internal" href="HALF.Interfaces.html#HALF.Interfaces.IHook.ActiveLearner" title="HALF.Interfaces.IHook.ActiveLearner"><em>ActiveLearner</em></a>) – The ActiveLearner whose test accuracy should be logged</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
 </section>
-<section id="half-hooks-writeaccuracylogshook">
-<h2>HALF.Hooks.WriteAccuracyLogsHook<a class="headerlink" href="#half-hooks-writeaccuracylogshook" title="Permalink to this heading">#</a></h2>
+<section id="module-HALF.Hooks.WriteAccuracyLogsHook">
+<span id="half-hooks-writeaccuracylogshook"></span><h2>HALF.Hooks.WriteAccuracyLogsHook<a class="headerlink" href="#module-HALF.Hooks.WriteAccuracyLogsHook" title="Permalink to this heading">#</a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="HALF.Hooks.WriteAccuracyLogsHook.WriteAccuracyLogsHook">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">HALF.Hooks.WriteAccuracyLogsHook.</span></span><span class="sig-name descname"><span class="pre">WriteAccuracyLogsHook</span></span><a class="reference internal" href="_modules/HALF/Hooks/WriteAccuracyLogsHook.html#WriteAccuracyLogsHook"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#HALF.Hooks.WriteAccuracyLogsHook.WriteAccuracyLogsHook" title="Permalink to this definition">#</a></dt>
+<dd><p>Bases: <a class="reference internal" href="HALF.Interfaces.html#HALF.Interfaces.IHook.IHook" title="HALF.Interfaces.IHook.IHook"><code class="xref py py-class docutils literal notranslate"><span class="pre">IHook</span></code></a></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="HALF.Hooks.WriteAccuracyLogsHook.WriteAccuracyLogsHook.__init__">
+<span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">saving_dir</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">name</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/HALF/Hooks/WriteAccuracyLogsHook.html#WriteAccuracyLogsHook.__init__"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#HALF.Hooks.WriteAccuracyLogsHook.WriteAccuracyLogsHook.__init__" title="Permalink to this definition">#</a></dt>
+<dd><p>Writes accuracy logs to disk</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>saving_dir</strong> (<em>str</em>) – output directory</p></li>
+<li><p><strong>name</strong> (<em>str</em>) – output name for the accuracy logs</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="HALF.Hooks.WriteAccuracyLogsHook.WriteAccuracyLogsHook.apply">
+<span class="sig-name descname"><span class="pre">apply</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">al</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/HALF/Hooks/WriteAccuracyLogsHook.html#WriteAccuracyLogsHook.apply"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#HALF.Hooks.WriteAccuracyLogsHook.WriteAccuracyLogsHook.apply" title="Permalink to this definition">#</a></dt>
+<dd><p>Saves accuracy logs to csv file</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>al</strong> (<a class="reference internal" href="HALF.Interfaces.html#HALF.Interfaces.IHook.ActiveLearner" title="HALF.Interfaces.IHook.ActiveLearner"><em>ActiveLearner</em></a>) – The ActiveLearner whose accuracy logs should be written to disk</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
 </section>
 </section>
 
@@ -281,11 +455,11 @@
           <div class="toc-tree">
             <ul>
 <li><a class="reference internal" href="#">HALF.Hooks</a><ul>
-<li><a class="reference internal" href="#half-hooks-loadmodelhook">HALF.Hooks.LoadModelHook</a></li>
-<li><a class="reference internal" href="#half-hooks-savemodelhook">HALF.Hooks.SaveModelHook</a></li>
-<li><a class="reference internal" href="#half-hooks-setuptensorboardhook">HALF.Hooks.SetupTensorboardHook</a></li>
-<li><a class="reference internal" href="#half-hooks-testaccuracyloggerhook">HALF.Hooks.TestAccuracyLoggerHook</a></li>
-<li><a class="reference internal" href="#half-hooks-writeaccuracylogshook">HALF.Hooks.WriteAccuracyLogsHook</a></li>
+<li><a class="reference internal" href="#module-HALF.Hooks.LoadModelHook">HALF.Hooks.LoadModelHook</a></li>
+<li><a class="reference internal" href="#module-HALF.Hooks.SaveModelHook">HALF.Hooks.SaveModelHook</a></li>
+<li><a class="reference internal" href="#module-HALF.Hooks.SetupTensorboardHook">HALF.Hooks.SetupTensorboardHook</a></li>
+<li><a class="reference internal" href="#module-HALF.Hooks.TestAccuracyLoggerHook">HALF.Hooks.TestAccuracyLoggerHook</a></li>
+<li><a class="reference internal" href="#module-HALF.Hooks.WriteAccuracyLogsHook">HALF.Hooks.WriteAccuracyLogsHook</a></li>
 </ul>
 </li>
 </ul>

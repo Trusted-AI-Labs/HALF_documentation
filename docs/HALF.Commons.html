@@ -206,14 +206,78 @@
         <article role="main">
           <section id="module-HALF.Commons">
 <span id="half-commons"></span><h1>HALF.Commons<a class="headerlink" href="#module-HALF.Commons" title="Permalink to this heading">#</a></h1>
-<section id="half-commons-singletonmeta">
-<h2>HALF.Commons.SingletonMeta<a class="headerlink" href="#half-commons-singletonmeta" title="Permalink to this heading">#</a></h2>
+<section id="module-HALF.Commons.SingletonMeta">
+<span id="half-commons-singletonmeta"></span><h2>HALF.Commons.SingletonMeta<a class="headerlink" href="#module-HALF.Commons.SingletonMeta" title="Permalink to this heading">#</a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="HALF.Commons.SingletonMeta.SingletonMeta">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">HALF.Commons.SingletonMeta.</span></span><span class="sig-name descname"><span class="pre">SingletonMeta</span></span><a class="reference internal" href="_modules/HALF/Commons/SingletonMeta.html#SingletonMeta"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#HALF.Commons.SingletonMeta.SingletonMeta" title="Permalink to this definition">#</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">type</span></code></p>
+<p>This is a thread-safe implementation of Singleton.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="HALF.Commons.SingletonMeta.SingletonMeta.__call__">
+<span class="sig-name descname"><span class="pre">__call__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/HALF/Commons/SingletonMeta.html#SingletonMeta.__call__"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#HALF.Commons.SingletonMeta.SingletonMeta.__call__" title="Permalink to this definition">#</a></dt>
+<dd><p>Possible changes to the value of the <cite>__init__</cite> argument do not affect
+the returned instance.</p>
+</dd></dl>
+
+</dd></dl>
+
 </section>
-<section id="half-commons-const">
-<h2>HALF.Commons.const<a class="headerlink" href="#half-commons-const" title="Permalink to this heading">#</a></h2>
+<section id="module-HALF.Commons.const">
+<span id="half-commons-const"></span><h2>HALF.Commons.const<a class="headerlink" href="#module-HALF.Commons.const" title="Permalink to this heading">#</a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="HALF.Commons.const.ModelStrategy">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">HALF.Commons.const.</span></span><span class="sig-name descname"><span class="pre">ModelStrategy</span></span><a class="reference internal" href="_modules/HALF/Commons/const.html#ModelStrategy"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#HALF.Commons.const.ModelStrategy" title="Permalink to this definition">#</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Enum</span></code></p>
+<p>An enumeration.</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="HALF.Commons.const.ModelStrategy.RESET">
+<span class="sig-name descname"><span class="pre">RESET</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">('reset',)</span></em><a class="headerlink" href="#HALF.Commons.const.ModelStrategy.RESET" title="Permalink to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="HALF.Commons.const.ModelStrategy.UPDATE">
+<span class="sig-name descname"><span class="pre">UPDATE</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'update'</span></em><a class="headerlink" href="#HALF.Commons.const.ModelStrategy.UPDATE" title="Permalink to this definition">#</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
 </section>
-<section id="half-commons-data">
-<h2>HALF.Commons.data<a class="headerlink" href="#half-commons-data" title="Permalink to this heading">#</a></h2>
+<section id="module-HALF.Commons.data">
+<span id="half-commons-data"></span><h2>HALF.Commons.data<a class="headerlink" href="#module-HALF.Commons.data" title="Permalink to this heading">#</a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="HALF.Commons.data.DataLogAccuracy">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">HALF.Commons.data.</span></span><span class="sig-name descname"><span class="pre">DataLogAccuracy</span></span><a class="reference internal" href="_modules/HALF/Commons/data.html#DataLogAccuracy"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#HALF.Commons.data.DataLogAccuracy" title="Permalink to this definition">#</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>DataLogAccuracy(lb_dataset_size: int, test_acc: float)</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="HALF.Commons.data.DataLogAccuracy.__init__">
+<span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">lb_dataset_size</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">test_acc</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#HALF.Commons.data.DataLogAccuracy.__init__" title="Permalink to this definition">#</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>lb_dataset_size</strong> (<em>int</em>) – </p></li>
+<li><p><strong>test_acc</strong> (<em>float</em>) – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="HALF.Commons.data.DataLogAccuracy.lb_dataset_size">
+<span class="sig-name descname"><span class="pre">lb_dataset_size</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">int</span></em><a class="headerlink" href="#HALF.Commons.data.DataLogAccuracy.lb_dataset_size" title="Permalink to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="HALF.Commons.data.DataLogAccuracy.test_acc">
+<span class="sig-name descname"><span class="pre">test_acc</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><a class="headerlink" href="#HALF.Commons.data.DataLogAccuracy.test_acc" title="Permalink to this definition">#</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
 </section>
 </section>
 
@@ -275,9 +339,9 @@
           <div class="toc-tree">
             <ul>
 <li><a class="reference internal" href="#">HALF.Commons</a><ul>
-<li><a class="reference internal" href="#half-commons-singletonmeta">HALF.Commons.SingletonMeta</a></li>
-<li><a class="reference internal" href="#half-commons-const">HALF.Commons.const</a></li>
-<li><a class="reference internal" href="#half-commons-data">HALF.Commons.data</a></li>
+<li><a class="reference internal" href="#module-HALF.Commons.SingletonMeta">HALF.Commons.SingletonMeta</a></li>
+<li><a class="reference internal" href="#module-HALF.Commons.const">HALF.Commons.const</a></li>
+<li><a class="reference internal" href="#module-HALF.Commons.data">HALF.Commons.data</a></li>
 </ul>
 </li>
 </ul>

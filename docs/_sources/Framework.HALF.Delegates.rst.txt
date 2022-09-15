@@ -1,0 +1,31 @@
+Framework.HALF.Delegates
+==================================
+
+.. py:module:: Framework.HALF.Delegates
+
+Submodules
+----------
+
+Framework.HALF.Delegates.DatasetIncreaseDelegate module
+-------------------------------------------------------
+
+.. automodule:: Framework.HALF.Delegates.DatasetIncreaseDelegate
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+Framework.HALF.Delegates.DatasetTestingDelegate module
+------------------------------------------------------
+
+.. automodule:: Framework.HALF.Delegates.DatasetTestingDelegate
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+Framework.HALF.Delegates.ModelTrainingDelegate module
+-----------------------------------------------------
+
+.. automodule:: Framework.HALF.Delegates.ModelTrainingDelegate
+   :members:
+   :undoc-members:
+   :show-inheritance:

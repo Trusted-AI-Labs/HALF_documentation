@@ -1,0 +1,50 @@
+Framework.HALF.Interfaces
+=================================
+
+.. automodule:: Framework.HALF.Interfaces
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+Submodules
+----------
+
+Framework.HALF.Interfaces.AbstractModel module
+----------------------------------------------
+
+.. automodule:: Framework.HALF.Interfaces.AbstractModel
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+Framework.HALF.Interfaces.IDelegate module
+------------------------------------------
+
+.. automodule:: Framework.HALF.Interfaces.IDelegate
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+Framework.HALF.Interfaces.IHook module
+--------------------------------------
+
+.. automodule:: Framework.HALF.Interfaces.IHook
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+Framework.HALF.Interfaces.IOracle module
+----------------------------------------
+
+.. automodule:: Framework.HALF.Interfaces.IOracle
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+Framework.HALF.Interfaces.IUnifiedStrategy module
+-------------------------------------------------
+
+.. automodule:: Framework.HALF.Interfaces.IUnifiedStrategy
+   :members:
+   :undoc-members:
+   :show-inheritance:
