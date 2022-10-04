@@ -67,6 +67,7 @@ HALF.Utils.Registry
 .. automodule:: HALF.Utils.Registry
    :members:
    :undoc-members:
+   :noindex:
    :show-inheritance:
 
 HALF.Utils.sample

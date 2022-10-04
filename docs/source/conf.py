@@ -33,8 +33,11 @@ extensions = [
     'sphinx.ext.napoleon',
     'sphinx.ext.viewcode',
     'recommonmark',
-    'sphinx_markdown_tables'
+    'sphinx_markdown_tables',
+    'sphinx.ext.intersphinx'
 ]
+
+intersphinx_mapping = {'distil' : ('https://decile-team-distil.readthedocs.io/en/stable/', None)}
 
 autosummary_generate = True
 
@@ -74,7 +77,7 @@ templates_path = ['_templates']
 # List of patterns, relative to source directory, that match files and
 # directories to ignore when looking for source files.
 # This pattern also affects html_static_path and html_extra_path.
-exclude_patterns = ['distil/', 'main', 'benchmark']
+exclude_patterns = ['main', 'benchmark']
 
 
 # -- Options for HTML output -------------------------------------------------
