@@ -2,13 +2,13 @@
 <html class="no-js" lang="en">
   <head><meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width,initial-scale=1"/>
-    <meta name="color-scheme" content="light dark"><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
-<link rel="author" title="About these documents" href="about.html" /><link rel="index" title="Index" href="genindex.html" /><link rel="search" title="Search" href="search.html" /><link rel="next" title="About" href="about.html" /><link rel="prev" title="HALF.Oracle" href="HALF.Oracle.html" />
+    <meta name="color-scheme" content="light dark"><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
+<link rel="author" title="About these documents" href="about.html" /><link rel="index" title="Index" href="genindex.html" /><link rel="search" title="Search" href="search.html" /><link rel="next" title="HALF.Strategies" href="HALF.Strategies.html" /><link rel="prev" title="HALF.Oracle" href="HALF.Oracle.html" />
 
-    <meta name="generator" content="sphinx-5.0.2, furo 2022.06.21"/>
+    <meta name="generator" content="sphinx-5.2.3, furo 2022.09.29"/>
         <title>HALF.Utils - HALF documentation</title>
       <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
-    <link rel="stylesheet" type="text/css" href="_static/styles/furo.css?digest=40978830699223671f4072448e654b5958f38b89" />
+    <link rel="stylesheet" type="text/css" href="_static/styles/furo.css?digest=d81277517bee4d6b0349d71bb2661d4890b5617c" />
     <link rel="stylesheet" type="text/css" href="_static/styles/furo-extensions.css?digest=30d1aed668e5c3a91c3e3bf6a60b675221979f0e" />
     
     
@@ -168,6 +168,7 @@
 <li class="toctree-l2"><a class="reference internal" href="HALF.Interfaces.html">HALF.Interfaces</a></li>
 <li class="toctree-l2"><a class="reference internal" href="HALF.Oracle.html">HALF.Oracle</a></li>
 <li class="toctree-l2 current current-page"><a class="current reference internal" href="#">HALF.Utils</a></li>
+<li class="toctree-l2"><a class="reference internal" href="HALF.Strategies.html">HALF.Strategies</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="about.html">About</a></li>
@@ -190,7 +191,8 @@
           <span>Back to top</span>
         </a>
         <div class="content-icon-container">
-          <div class="theme-toggle-container theme-toggle-content">
+          
+<div class="theme-toggle-container theme-toggle-content">
             <button class="theme-toggle">
               <div class="visually-hidden">Toggle Light / Dark / Auto color theme</div>
               <svg class="theme-icon-when-auto"><use href="#svg-sun-half"></use></svg>
@@ -891,20 +893,20 @@ of an active learning loop : datasets, model and oracle</p>
 </dd></dl>
 
 </section>
-<section id="module-HALF.Utils.Registry">
-<span id="half-utils-registry"></span><h2>HALF.Utils.Registry<a class="headerlink" href="#module-HALF.Utils.Registry" title="Permalink to this heading">#</a></h2>
+<section id="half-utils-registry">
+<h2>HALF.Utils.Registry<a class="headerlink" href="#half-utils-registry" title="Permalink to this heading">#</a></h2>
 <dl class="py class">
-<dt class="sig sig-object py" id="HALF.Utils.Registry.Registry">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">HALF.Utils.Registry.</span></span><span class="sig-name descname"><span class="pre">Registry</span></span><a class="reference internal" href="_modules/HALF/Utils/Registry.html#Registry"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#HALF.Utils.Registry.Registry" title="Permalink to this definition">#</a></dt>
+<dt class="sig sig-object py">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">HALF.Utils.Registry.</span></span><span class="sig-name descname"><span class="pre">Registry</span></span><a class="reference internal" href="_modules/HALF/Utils/Registry.html#Registry"><span class="viewcode-link"><span class="pre">[source]</span></span></a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
 <dl class="py attribute">
-<dt class="sig sig-object py" id="HALF.Utils.Registry.Registry.glob_module_registry">
-<span class="sig-name descname"><span class="pre">glob_module_registry</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">{'AdversarialBIM':</span> <span class="pre">&lt;class</span> <span class="pre">'distil.active_learning_strategies.adversarial_bim.AdversarialBIM'&gt;,</span> <span class="pre">'AdversarialDeepFool':</span> <span class="pre">&lt;class</span> <span class="pre">'distil.active_learning_strategies.adversarial_deepfool.AdversarialDeepFool'&gt;,</span> <span class="pre">'BADGE':</span> <span class="pre">&lt;class</span> <span class="pre">'distil.active_learning_strategies.badge.BADGE'&gt;,</span> <span class="pre">'BALDDropout':</span> <span class="pre">&lt;class</span> <span class="pre">'distil.active_learning_strategies.bayesian_active_learning_disagreement_dropout.BALDDropout'&gt;,</span> <span class="pre">'BatchBALDDropout':</span> <span class="pre">&lt;class</span> <span class="pre">'distil.active_learning_strategies.batch_bald.BatchBALDDropout'&gt;,</span> <span class="pre">'CoreSet':</span> <span class="pre">&lt;class</span> <span class="pre">'distil.active_learning_strategies.core_set.CoreSet'&gt;,</span> <span class="pre">'DummyStrategy':</span> <span class="pre">&lt;class</span> <span class="pre">'HALF.Strategies.DummyStrategy.DummyStrategy'&gt;,</span> <span class="pre">'EntropySampling':</span> <span class="pre">&lt;class</span> <span class="pre">'distil.active_learning_strategies.entropy_sampling.EntropySampling'&gt;,</span> <span class="pre">'EntropySamplingDropout':</span> <span class="pre">&lt;class</span> <span class="pre">'distil.active_learning_strategies.entropy_sampling_dropout.EntropySamplingDropout'&gt;,</span> <span class="pre">'FASS':</span> <span class="pre">&lt;class</span> <span class="pre">'distil.active_learning_strategies.fass.FASS'&gt;,</span> <span class="pre">'GLISTER':</span> <span class="pre">&lt;class</span> <span class="pre">'distil.active_learning_strategies.glister.GLISTER'&gt;,</span> <span class="pre">'GradMatchActive':</span> <span class="pre">&lt;class</span> <span class="pre">'distil.active_learning_strategies.gradmatch_active.GradMatchActive'&gt;,</span> <span class="pre">'KMeansSampling':</span> <span class="pre">&lt;class</span> <span class="pre">'distil.active_learning_strategies.kmeans_sampling.KMeansSampling'&gt;,</span> <span class="pre">'LeastConfidenceSampling':</span> <span class="pre">&lt;class</span> <span class="pre">'distil.active_learning_strategies.least_confidence_sampling.LeastConfidenceSampling'&gt;,</span> <span class="pre">'LeastConfidenceSamplingDropout':</span> <span class="pre">&lt;class</span> <span class="pre">'distil.active_learning_strategies.least_confidence_sampling_dropout.LeastConfidenceSamplingDropout'&gt;,</span> <span class="pre">'LoadModelHook':</span> <span class="pre">&lt;class</span> <span class="pre">'HALF.Hooks.LoadModelHook.LoadModelHook'&gt;,</span> <span class="pre">'MarginSampling':</span> <span class="pre">&lt;class</span> <span class="pre">'distil.active_learning_strategies.margin_sampling.MarginSampling'&gt;,</span> <span class="pre">'MarginSamplingDropout':</span> <span class="pre">&lt;class</span> <span class="pre">'distil.active_learning_strategies.margin_sampling_dropout.MarginSamplingDropout'&gt;,</span> <span class="pre">'PartitionStrategy':</span> <span class="pre">&lt;class</span> <span class="pre">'distil.active_learning_strategies.partition_strategy.PartitionStrategy'&gt;,</span> <span class="pre">'RandomSampling':</span> <span class="pre">&lt;class</span> <span class="pre">'distil.active_learning_strategies.random_sampling.RandomSampling'&gt;,</span> <span class="pre">'SCG':</span> <span class="pre">&lt;class</span> <span class="pre">'distil.active_learning_strategies.scg.SCG'&gt;,</span> <span class="pre">'SCMI':</span> <span class="pre">&lt;class</span> <span class="pre">'distil.active_learning_strategies.scmi.SCMI'&gt;,</span> <span class="pre">'SMI':</span> <span class="pre">&lt;class</span> <span class="pre">'distil.active_learning_strategies.smi.SMI'&gt;,</span> <span class="pre">'SaveModelHook':</span> <span class="pre">&lt;class</span> <span class="pre">'HALF.Hooks.SaveModelHook.SaveModelHook'&gt;,</span> <span class="pre">'SetupTensorboardHook':</span> <span class="pre">&lt;class</span> <span class="pre">'HALF.Hooks.SetupTensorboardHook.SetupTensorboardHook'&gt;,</span> <span class="pre">'SubmodularSampling':</span> <span class="pre">&lt;class</span> <span class="pre">'distil.active_learning_strategies.submod_sampling.SubmodularSampling'&gt;,</span> <span class="pre">'TestAccuracyLoggerHook':</span> <span class="pre">&lt;class</span> <span class="pre">'HALF.Hooks.TestAccuracyLoggerHook.TestAccuracyLoggerHook'&gt;,</span> <span class="pre">'WriteAccuracyLogsHook':</span> <span class="pre">&lt;class</span> <span class="pre">'HALF.Hooks.WriteAccuracyLogsHook.WriteAccuracyLogsHook'&gt;}</span></em><a class="headerlink" href="#HALF.Utils.Registry.Registry.glob_module_registry" title="Permalink to this definition">#</a></dt>
+<dt class="sig sig-object py">
+<span class="sig-name descname"><span class="pre">glob_module_registry</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">{'AdversarialBIM':</span> <span class="pre">&lt;class</span> <span class="pre">'distil.active_learning_strategies.adversarial_bim.AdversarialBIM'&gt;,</span> <span class="pre">'AdversarialDeepFool':</span> <span class="pre">&lt;class</span> <span class="pre">'distil.active_learning_strategies.adversarial_deepfool.AdversarialDeepFool'&gt;,</span> <span class="pre">'BADGE':</span> <span class="pre">&lt;class</span> <span class="pre">'distil.active_learning_strategies.badge.BADGE'&gt;,</span> <span class="pre">'BALDDropout':</span> <span class="pre">&lt;class</span> <span class="pre">'distil.active_learning_strategies.bayesian_active_learning_disagreement_dropout.BALDDropout'&gt;,</span> <span class="pre">'BatchBALDDropout':</span> <span class="pre">&lt;class</span> <span class="pre">'distil.active_learning_strategies.batch_bald.BatchBALDDropout'&gt;,</span> <span class="pre">'CoreGCN':</span> <span class="pre">&lt;class</span> <span class="pre">'HALF.Strategies.sequence_gcn.CoreGCN'&gt;,</span> <span class="pre">'CoreSet':</span> <span class="pre">&lt;class</span> <span class="pre">'distil.active_learning_strategies.core_set.CoreSet'&gt;,</span> <span class="pre">'EntropySampling':</span> <span class="pre">&lt;class</span> <span class="pre">'distil.active_learning_strategies.entropy_sampling.EntropySampling'&gt;,</span> <span class="pre">'EntropySamplingDropout':</span> <span class="pre">&lt;class</span> <span class="pre">'distil.active_learning_strategies.entropy_sampling_dropout.EntropySamplingDropout'&gt;,</span> <span class="pre">'FASS':</span> <span class="pre">&lt;class</span> <span class="pre">'distil.active_learning_strategies.fass.FASS'&gt;,</span> <span class="pre">'GLISTER':</span> <span class="pre">&lt;class</span> <span class="pre">'distil.active_learning_strategies.glister.GLISTER'&gt;,</span> <span class="pre">'GradMatchActive':</span> <span class="pre">&lt;class</span> <span class="pre">'distil.active_learning_strategies.gradmatch_active.GradMatchActive'&gt;,</span> <span class="pre">'KMeansSampling':</span> <span class="pre">&lt;class</span> <span class="pre">'distil.active_learning_strategies.kmeans_sampling.KMeansSampling'&gt;,</span> <span class="pre">'LeastConfidenceSampling':</span> <span class="pre">&lt;class</span> <span class="pre">'distil.active_learning_strategies.least_confidence_sampling.LeastConfidenceSampling'&gt;,</span> <span class="pre">'LeastConfidenceSamplingDropout':</span> <span class="pre">&lt;class</span> <span class="pre">'distil.active_learning_strategies.least_confidence_sampling_dropout.LeastConfidenceSamplingDropout'&gt;,</span> <span class="pre">'LoadModelHook':</span> <span class="pre">&lt;class</span> <span class="pre">'HALF.Hooks.LoadModelHook.LoadModelHook'&gt;,</span> <span class="pre">'MarginSampling':</span> <span class="pre">&lt;class</span> <span class="pre">'distil.active_learning_strategies.margin_sampling.MarginSampling'&gt;,</span> <span class="pre">'MarginSamplingDropout':</span> <span class="pre">&lt;class</span> <span class="pre">'distil.active_learning_strategies.margin_sampling_dropout.MarginSamplingDropout'&gt;,</span> <span class="pre">'PartitionStrategy':</span> <span class="pre">&lt;class</span> <span class="pre">'distil.active_learning_strategies.partition_strategy.PartitionStrategy'&gt;,</span> <span class="pre">'RandomSampling':</span> <span class="pre">&lt;class</span> <span class="pre">'distil.active_learning_strategies.random_sampling.RandomSampling'&gt;,</span> <span class="pre">'SCG':</span> <span class="pre">&lt;class</span> <span class="pre">'distil.active_learning_strategies.scg.SCG'&gt;,</span> <span class="pre">'SCMI':</span> <span class="pre">&lt;class</span> <span class="pre">'distil.active_learning_strategies.scmi.SCMI'&gt;,</span> <span class="pre">'SMI':</span> <span class="pre">&lt;class</span> <span class="pre">'distil.active_learning_strategies.smi.SMI'&gt;,</span> <span class="pre">'SaveModelHook':</span> <span class="pre">&lt;class</span> <span class="pre">'HALF.Hooks.SaveModelHook.SaveModelHook'&gt;,</span> <span class="pre">'SetupEarlyStopTraining':</span> <span class="pre">&lt;class</span> <span class="pre">'HALF.Hooks.SetupEarlyStopTraining.SetupEarlyStopTraining'&gt;,</span> <span class="pre">'SetupTensorboardHook':</span> <span class="pre">&lt;class</span> <span class="pre">'HALF.Hooks.SetupTensorboardHook.SetupTensorboardHook'&gt;,</span> <span class="pre">'SubmodularSampling':</span> <span class="pre">&lt;class</span> <span class="pre">'distil.active_learning_strategies.submod_sampling.SubmodularSampling'&gt;,</span> <span class="pre">'TestAccuracyLoggerHook':</span> <span class="pre">&lt;class</span> <span class="pre">'HALF.Hooks.TestAccuracyLoggerHook.TestAccuracyLoggerHook'&gt;,</span> <span class="pre">'UncertainGCN':</span> <span class="pre">&lt;class</span> <span class="pre">'HALF.Strategies.sequence_gcn.UncertainGCN'&gt;,</span> <span class="pre">'WriteAccuracyLogsHook':</span> <span class="pre">&lt;class</span> <span class="pre">'HALF.Hooks.WriteAccuracyLogsHook.WriteAccuracyLogsHook'&gt;}</span></em></dt>
 <dd></dd></dl>
 
 <dl class="py method">
-<dt class="sig sig-object py" id="HALF.Utils.Registry.Registry.register">
-<em class="property"><span class="pre">classmethod</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">register</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">force</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/HALF/Utils/Registry.html#Registry.register"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#HALF.Utils.Registry.Registry.register" title="Permalink to this definition">#</a></dt>
+<dt class="sig sig-object py">
+<em class="property"><span class="pre">classmethod</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">register</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">force</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/HALF/Utils/Registry.html#Registry.register"><span class="viewcode-link"><span class="pre">[source]</span></span></a></dt>
 <dd><p>Class method to register Executor class to the internal registry.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
@@ -917,7 +919,7 @@ of an active learning loop : datasets, model and oracle</p>
 <dd class="field-even"><p>The Executor class itself.</p>
 </dd>
 <dt class="field-odd">Return type<span class="colon">:</span></dt>
-<dd class="field-odd"><p><a class="reference internal" href="#HALF.Utils.Registry.Registry" title="HALF.Utils.Registry.Registry"><em>Registry</em></a></p>
+<dd class="field-odd"><p><a class="reference internal" href="HALF.Strategies.html#HALF.Utils.Registry.Registry" title="HALF.Utils.Registry.Registry"><em>Registry</em></a></p>
 </dd>
 </dl>
 </dd></dl>
@@ -1251,17 +1253,17 @@ Currently, in MMF can be SampleList, Report or a tensor.</p>
       <footer>
         
         <div class="related-pages">
-          <a class="next-page" href="about.html">
+          <a class="next-page" href="HALF.Strategies.html">
               <div class="page-info">
                 <div class="context">
                   <span>Next</span>
                 </div>
-                <div class="title">About</div>
+                <div class="title">HALF.Strategies</div>
               </div>
-              <svg><use href="#svg-arrow-right"></use></svg>
+              <svg class="furo-related-icon"><use href="#svg-arrow-right"></use></svg>
             </a>
           <a class="prev-page" href="HALF.Oracle.html">
-              <svg><use href="#svg-arrow-right"></use></svg>
+              <svg class="furo-related-icon"><use href="#svg-arrow-right"></use></svg>
               <div class="page-info">
                 <div class="context">
                   <span>Previous</span>
@@ -1297,23 +1299,154 @@ Currently, in MMF can be SampleList, Report or a tensor.</p>
       <div class="toc-sticky toc-scroll">
         <div class="toc-title-container">
           <span class="toc-title">
-            Contents
+            On this page
           </span>
         </div>
         <div class="toc-tree-container">
           <div class="toc-tree">
             <ul>
 <li><a class="reference internal" href="#">HALF.Utils</a><ul>
-<li><a class="reference internal" href="#module-HALF.Utils.ALDataModule">HALF.Utils.ALDataModule</a></li>
-<li><a class="reference internal" href="#module-HALF.Utils.ALDatasetManager">HALF.Utils.ALDatasetManager</a></li>
-<li><a class="reference internal" href="#module-HALF.Utils.ActiveLearner">HALF.Utils.ActiveLearner</a></li>
-<li><a class="reference internal" href="#module-HALF.Utils.ActiveLearnerBuilder">HALF.Utils.ActiveLearnerBuilder</a></li>
-<li><a class="reference internal" href="#module-HALF.Utils.Config">HALF.Utils.Config</a></li>
-<li><a class="reference internal" href="#module-HALF.Utils.ConfigActiveLearner">HALF.Utils.ConfigActiveLearner</a></li>
-<li><a class="reference internal" href="#module-HALF.Utils.GlobalIndexDataset">HALF.Utils.GlobalIndexDataset</a></li>
-<li><a class="reference internal" href="#module-HALF.Utils.Registry">HALF.Utils.Registry</a></li>
-<li><a class="reference internal" href="#module-HALF.Utils.sample">HALF.Utils.sample</a></li>
-<li><a class="reference internal" href="#module-HALF.Utils.utils">HALF.Utils.utils</a></li>
+<li><a class="reference internal" href="#module-HALF.Utils.ALDataModule">HALF.Utils.ALDataModule</a><ul>
+<li><a class="reference internal" href="#HALF.Utils.ALDataModule.ALDataModule"><code class="docutils literal notranslate"><span class="pre">ALDataModule</span></code></a><ul>
+<li><a class="reference internal" href="#HALF.Utils.ALDataModule.ALDataModule.__init__"><code class="docutils literal notranslate"><span class="pre">ALDataModule.__init__()</span></code></a></li>
+<li><a class="reference internal" href="#HALF.Utils.ALDataModule.ALDataModule.set_test_mode"><code class="docutils literal notranslate"><span class="pre">ALDataModule.set_test_mode()</span></code></a></li>
+<li><a class="reference internal" href="#HALF.Utils.ALDataModule.ALDataModule.set_train_mode"><code class="docutils literal notranslate"><span class="pre">ALDataModule.set_train_mode()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a class="reference internal" href="#module-HALF.Utils.ALDatasetManager">HALF.Utils.ALDatasetManager</a><ul>
+<li><a class="reference internal" href="#HALF.Utils.ALDatasetManager.ALDatasetManager"><code class="docutils literal notranslate"><span class="pre">ALDatasetManager</span></code></a><ul>
+<li><a class="reference internal" href="#HALF.Utils.ALDatasetManager.ALDatasetManager.__init__"><code class="docutils literal notranslate"><span class="pre">ALDatasetManager.__init__()</span></code></a></li>
+<li><a class="reference internal" href="#HALF.Utils.ALDatasetManager.ALDatasetManager.dataset_labeled"><code class="docutils literal notranslate"><span class="pre">ALDatasetManager.dataset_labeled</span></code></a></li>
+<li><a class="reference internal" href="#HALF.Utils.ALDatasetManager.ALDatasetManager.dataset_test"><code class="docutils literal notranslate"><span class="pre">ALDatasetManager.dataset_test</span></code></a></li>
+<li><a class="reference internal" href="#HALF.Utils.ALDatasetManager.ALDatasetManager.dataset_unlabeled"><code class="docutils literal notranslate"><span class="pre">ALDatasetManager.dataset_unlabeled</span></code></a></li>
+<li><a class="reference internal" href="#HALF.Utils.ALDatasetManager.ALDatasetManager.dataset_unlabeled_lb"><code class="docutils literal notranslate"><span class="pre">ALDatasetManager.dataset_unlabeled_lb</span></code></a></li>
+<li><a class="reference internal" href="#HALF.Utils.ALDatasetManager.ALDatasetManager.set_test_mode"><code class="docutils literal notranslate"><span class="pre">ALDatasetManager.set_test_mode()</span></code></a></li>
+<li><a class="reference internal" href="#HALF.Utils.ALDatasetManager.ALDatasetManager.set_train_mode"><code class="docutils literal notranslate"><span class="pre">ALDatasetManager.set_train_mode()</span></code></a></li>
+<li><a class="reference internal" href="#HALF.Utils.ALDatasetManager.ALDatasetManager.subset_unlabeled"><code class="docutils literal notranslate"><span class="pre">ALDatasetManager.subset_unlabeled()</span></code></a></li>
+<li><a class="reference internal" href="#HALF.Utils.ALDatasetManager.ALDatasetManager.update"><code class="docutils literal notranslate"><span class="pre">ALDatasetManager.update()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a class="reference internal" href="#module-HALF.Utils.ActiveLearner">HALF.Utils.ActiveLearner</a><ul>
+<li><a class="reference internal" href="#HALF.Utils.ActiveLearner.ActiveLearner"><code class="docutils literal notranslate"><span class="pre">ActiveLearner</span></code></a><ul>
+<li><a class="reference internal" href="#HALF.Utils.ActiveLearner.ActiveLearner.oracle"><code class="docutils literal notranslate"><span class="pre">ActiveLearner.oracle</span></code></a></li>
+<li><a class="reference internal" href="#HALF.Utils.ActiveLearner.ActiveLearner.dataset_manager"><code class="docutils literal notranslate"><span class="pre">ActiveLearner.dataset_manager</span></code></a></li>
+<li><a class="reference internal" href="#HALF.Utils.ActiveLearner.ActiveLearner.model"><code class="docutils literal notranslate"><span class="pre">ActiveLearner.model</span></code></a></li>
+<li><a class="reference internal" href="#HALF.Utils.ActiveLearner.ActiveLearner.dict_hooks"><code class="docutils literal notranslate"><span class="pre">ActiveLearner.dict_hooks</span></code></a></li>
+<li><a class="reference internal" href="#HALF.Utils.ActiveLearner.ActiveLearner.ds_hook"><code class="docutils literal notranslate"><span class="pre">ActiveLearner.ds_hook</span></code></a></li>
+<li><a class="reference internal" href="#HALF.Utils.ActiveLearner.ActiveLearner.i_round"><code class="docutils literal notranslate"><span class="pre">ActiveLearner.i_round</span></code></a></li>
+<li><a class="reference internal" href="#HALF.Utils.ActiveLearner.ActiveLearner.best_test_accuracy"><code class="docutils literal notranslate"><span class="pre">ActiveLearner.best_test_accuracy</span></code></a></li>
+<li><a class="reference internal" href="#HALF.Utils.ActiveLearner.ActiveLearner.nb_oracle_labeled"><code class="docutils literal notranslate"><span class="pre">ActiveLearner.nb_oracle_labeled</span></code></a></li>
+<li><a class="reference internal" href="#HALF.Utils.ActiveLearner.ActiveLearner.configAL"><code class="docutils literal notranslate"><span class="pre">ActiveLearner.configAL</span></code></a></li>
+<li><a class="reference internal" href="#HALF.Utils.ActiveLearner.ActiveLearner.trainer"><code class="docutils literal notranslate"><span class="pre">ActiveLearner.trainer</span></code></a></li>
+<li><a class="reference internal" href="#HALF.Utils.ActiveLearner.ActiveLearner.nb_label_increased"><code class="docutils literal notranslate"><span class="pre">ActiveLearner.nb_label_increased</span></code></a></li>
+<li><a class="reference internal" href="#HALF.Utils.ActiveLearner.ActiveLearner.current_test_results"><code class="docutils literal notranslate"><span class="pre">ActiveLearner.current_test_results</span></code></a></li>
+<li><a class="reference internal" href="#HALF.Utils.ActiveLearner.ActiveLearner.__init__"><code class="docutils literal notranslate"><span class="pre">ActiveLearner.__init__()</span></code></a></li>
+<li><a class="reference internal" href="#HALF.Utils.ActiveLearner.ActiveLearner.apply_model_strategy"><code class="docutils literal notranslate"><span class="pre">ActiveLearner.apply_model_strategy()</span></code></a></li>
+<li><a class="reference internal" href="#HALF.Utils.ActiveLearner.ActiveLearner.dataset_test"><code class="docutils literal notranslate"><span class="pre">ActiveLearner.dataset_test</span></code></a></li>
+<li><a class="reference internal" href="#HALF.Utils.ActiveLearner.ActiveLearner.increase_label"><code class="docutils literal notranslate"><span class="pre">ActiveLearner.increase_label()</span></code></a></li>
+<li><a class="reference internal" href="#HALF.Utils.ActiveLearner.ActiveLearner.on_AL_iteration_begin"><code class="docutils literal notranslate"><span class="pre">ActiveLearner.on_AL_iteration_begin()</span></code></a></li>
+<li><a class="reference internal" href="#HALF.Utils.ActiveLearner.ActiveLearner.on_AL_iteration_end"><code class="docutils literal notranslate"><span class="pre">ActiveLearner.on_AL_iteration_end()</span></code></a></li>
+<li><a class="reference internal" href="#HALF.Utils.ActiveLearner.ActiveLearner.on_AL_loop_begin"><code class="docutils literal notranslate"><span class="pre">ActiveLearner.on_AL_loop_begin()</span></code></a></li>
+<li><a class="reference internal" href="#HALF.Utils.ActiveLearner.ActiveLearner.on_AL_loop_end"><code class="docutils literal notranslate"><span class="pre">ActiveLearner.on_AL_loop_end()</span></code></a></li>
+<li><a class="reference internal" href="#HALF.Utils.ActiveLearner.ActiveLearner.on_increase_dataset_begin"><code class="docutils literal notranslate"><span class="pre">ActiveLearner.on_increase_dataset_begin()</span></code></a></li>
+<li><a class="reference internal" href="#HALF.Utils.ActiveLearner.ActiveLearner.on_increase_dataset_end"><code class="docutils literal notranslate"><span class="pre">ActiveLearner.on_increase_dataset_end()</span></code></a></li>
+<li><a class="reference internal" href="#HALF.Utils.ActiveLearner.ActiveLearner.on_test_begin"><code class="docutils literal notranslate"><span class="pre">ActiveLearner.on_test_begin()</span></code></a></li>
+<li><a class="reference internal" href="#HALF.Utils.ActiveLearner.ActiveLearner.on_test_end"><code class="docutils literal notranslate"><span class="pre">ActiveLearner.on_test_end()</span></code></a></li>
+<li><a class="reference internal" href="#HALF.Utils.ActiveLearner.ActiveLearner.on_train_begin"><code class="docutils literal notranslate"><span class="pre">ActiveLearner.on_train_begin()</span></code></a></li>
+<li><a class="reference internal" href="#HALF.Utils.ActiveLearner.ActiveLearner.on_train_end"><code class="docutils literal notranslate"><span class="pre">ActiveLearner.on_train_end()</span></code></a></li>
+<li><a class="reference internal" href="#HALF.Utils.ActiveLearner.ActiveLearner.register_hook"><code class="docutils literal notranslate"><span class="pre">ActiveLearner.register_hook()</span></code></a></li>
+<li><a class="reference internal" href="#HALF.Utils.ActiveLearner.ActiveLearner.run"><code class="docutils literal notranslate"><span class="pre">ActiveLearner.run()</span></code></a></li>
+<li><a class="reference internal" href="#HALF.Utils.ActiveLearner.ActiveLearner.set_list_hook"><code class="docutils literal notranslate"><span class="pre">ActiveLearner.set_list_hook()</span></code></a></li>
+<li><a class="reference internal" href="#HALF.Utils.ActiveLearner.ActiveLearner.stop_condition"><code class="docutils literal notranslate"><span class="pre">ActiveLearner.stop_condition()</span></code></a></li>
+<li><a class="reference internal" href="#HALF.Utils.ActiveLearner.ActiveLearner.test"><code class="docutils literal notranslate"><span class="pre">ActiveLearner.test()</span></code></a></li>
+<li><a class="reference internal" href="#HALF.Utils.ActiveLearner.ActiveLearner.train"><code class="docutils literal notranslate"><span class="pre">ActiveLearner.train()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a class="reference internal" href="#module-HALF.Utils.ActiveLearnerBuilder">HALF.Utils.ActiveLearnerBuilder</a><ul>
+<li><a class="reference internal" href="#HALF.Utils.ActiveLearnerBuilder.ActiveLearnerBuilder"><code class="docutils literal notranslate"><span class="pre">ActiveLearnerBuilder</span></code></a><ul>
+<li><a class="reference internal" href="#HALF.Utils.ActiveLearnerBuilder.ActiveLearnerBuilder.__init__"><code class="docutils literal notranslate"><span class="pre">ActiveLearnerBuilder.__init__()</span></code></a></li>
+<li><a class="reference internal" href="#HALF.Utils.ActiveLearnerBuilder.ActiveLearnerBuilder.add_defaults_hooks"><code class="docutils literal notranslate"><span class="pre">ActiveLearnerBuilder.add_defaults_hooks()</span></code></a></li>
+<li><a class="reference internal" href="#HALF.Utils.ActiveLearnerBuilder.ActiveLearnerBuilder.add_hook"><code class="docutils literal notranslate"><span class="pre">ActiveLearnerBuilder.add_hook()</span></code></a></li>
+<li><a class="reference internal" href="#HALF.Utils.ActiveLearnerBuilder.ActiveLearnerBuilder.build"><code class="docutils literal notranslate"><span class="pre">ActiveLearnerBuilder.build()</span></code></a></li>
+<li><a class="reference internal" href="#HALF.Utils.ActiveLearnerBuilder.ActiveLearnerBuilder.hydrate_hook_dict"><code class="docutils literal notranslate"><span class="pre">ActiveLearnerBuilder.hydrate_hook_dict()</span></code></a></li>
+<li><a class="reference internal" href="#HALF.Utils.ActiveLearnerBuilder.ActiveLearnerBuilder.remove_hook"><code class="docutils literal notranslate"><span class="pre">ActiveLearnerBuilder.remove_hook()</span></code></a></li>
+<li><a class="reference internal" href="#HALF.Utils.ActiveLearnerBuilder.ActiveLearnerBuilder.reset"><code class="docutils literal notranslate"><span class="pre">ActiveLearnerBuilder.reset()</span></code></a></li>
+<li><a class="reference internal" href="#HALF.Utils.ActiveLearnerBuilder.ActiveLearnerBuilder.set_data_module"><code class="docutils literal notranslate"><span class="pre">ActiveLearnerBuilder.set_data_module()</span></code></a></li>
+<li><a class="reference internal" href="#HALF.Utils.ActiveLearnerBuilder.ActiveLearnerBuilder.set_model"><code class="docutils literal notranslate"><span class="pre">ActiveLearnerBuilder.set_model()</span></code></a></li>
+<li><a class="reference internal" href="#HALF.Utils.ActiveLearnerBuilder.ActiveLearnerBuilder.set_oracle"><code class="docutils literal notranslate"><span class="pre">ActiveLearnerBuilder.set_oracle()</span></code></a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#HALF.Utils.ActiveLearnerBuilder.HookAttachData"><code class="docutils literal notranslate"><span class="pre">HookAttachData</span></code></a><ul>
+<li><a class="reference internal" href="#HALF.Utils.ActiveLearnerBuilder.HookAttachData.__init__"><code class="docutils literal notranslate"><span class="pre">HookAttachData.__init__()</span></code></a></li>
+<li><a class="reference internal" href="#HALF.Utils.ActiveLearnerBuilder.HookAttachData.args"><code class="docutils literal notranslate"><span class="pre">HookAttachData.args</span></code></a></li>
+<li><a class="reference internal" href="#HALF.Utils.ActiveLearnerBuilder.HookAttachData.attach_point"><code class="docutils literal notranslate"><span class="pre">HookAttachData.attach_point</span></code></a></li>
+<li><a class="reference internal" href="#HALF.Utils.ActiveLearnerBuilder.HookAttachData.class_name"><code class="docutils literal notranslate"><span class="pre">HookAttachData.class_name</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a class="reference internal" href="#module-HALF.Utils.Config">HALF.Utils.Config</a><ul>
+<li><a class="reference internal" href="#HALF.Utils.Config.Config"><code class="docutils literal notranslate"><span class="pre">Config</span></code></a><ul>
+<li><a class="reference internal" href="#HALF.Utils.Config.Config.CONFIG"><code class="docutils literal notranslate"><span class="pre">Config.CONFIG</span></code></a></li>
+<li><a class="reference internal" href="#HALF.Utils.Config.Config.data"><code class="docutils literal notranslate"><span class="pre">Config.data</span></code></a></li>
+<li><a class="reference internal" href="#HALF.Utils.Config.Config.setup"><code class="docutils literal notranslate"><span class="pre">Config.setup()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a class="reference internal" href="#module-HALF.Utils.ConfigActiveLearner">HALF.Utils.ConfigActiveLearner</a><ul>
+<li><a class="reference internal" href="#HALF.Utils.ConfigActiveLearner.ConfigActiveLearner"><code class="docutils literal notranslate"><span class="pre">ConfigActiveLearner</span></code></a><ul>
+<li><a class="reference internal" href="#HALF.Utils.ConfigActiveLearner.ConfigActiveLearner.__init__"><code class="docutils literal notranslate"><span class="pre">ConfigActiveLearner.__init__()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a class="reference internal" href="#module-HALF.Utils.GlobalIndexDataset">HALF.Utils.GlobalIndexDataset</a><ul>
+<li><a class="reference internal" href="#HALF.Utils.GlobalIndexDataset.GlobalIndexDataset"><code class="docutils literal notranslate"><span class="pre">GlobalIndexDataset</span></code></a><ul>
+<li><a class="reference internal" href="#HALF.Utils.GlobalIndexDataset.GlobalIndexDataset.__init__"><code class="docutils literal notranslate"><span class="pre">GlobalIndexDataset.__init__()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a class="reference internal" href="#half-utils-registry">HALF.Utils.Registry</a></li>
+<li><a class="reference internal" href="#module-HALF.Utils.sample">HALF.Utils.sample</a><ul>
+<li><a class="reference internal" href="#HALF.Utils.sample.Sample"><code class="docutils literal notranslate"><span class="pre">Sample</span></code></a><ul>
+<li><a class="reference internal" href="#HALF.Utils.sample.Sample.__init__"><code class="docutils literal notranslate"><span class="pre">Sample.__init__()</span></code></a></li>
+<li><a class="reference internal" href="#HALF.Utils.sample.Sample.fields"><code class="docutils literal notranslate"><span class="pre">Sample.fields()</span></code></a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#HALF.Utils.sample.SampleList"><code class="docutils literal notranslate"><span class="pre">SampleList</span></code></a><ul>
+<li><a class="reference internal" href="#HALF.Utils.sample.SampleList.__init__"><code class="docutils literal notranslate"><span class="pre">SampleList.__init__()</span></code></a></li>
+<li><a class="reference internal" href="#HALF.Utils.sample.SampleList.add_field"><code class="docutils literal notranslate"><span class="pre">SampleList.add_field()</span></code></a></li>
+<li><a class="reference internal" href="#HALF.Utils.sample.SampleList.copy"><code class="docutils literal notranslate"><span class="pre">SampleList.copy()</span></code></a></li>
+<li><a class="reference internal" href="#HALF.Utils.sample.SampleList.detach"><code class="docutils literal notranslate"><span class="pre">SampleList.detach()</span></code></a></li>
+<li><a class="reference internal" href="#HALF.Utils.sample.SampleList.fields"><code class="docutils literal notranslate"><span class="pre">SampleList.fields()</span></code></a></li>
+<li><a class="reference internal" href="#HALF.Utils.sample.SampleList.get_batch_size"><code class="docutils literal notranslate"><span class="pre">SampleList.get_batch_size()</span></code></a></li>
+<li><a class="reference internal" href="#HALF.Utils.sample.SampleList.get_device"><code class="docutils literal notranslate"><span class="pre">SampleList.get_device()</span></code></a></li>
+<li><a class="reference internal" href="#HALF.Utils.sample.SampleList.get_field"><code class="docutils literal notranslate"><span class="pre">SampleList.get_field()</span></code></a></li>
+<li><a class="reference internal" href="#HALF.Utils.sample.SampleList.get_fields"><code class="docutils literal notranslate"><span class="pre">SampleList.get_fields()</span></code></a></li>
+<li><a class="reference internal" href="#HALF.Utils.sample.SampleList.get_item_list"><code class="docutils literal notranslate"><span class="pre">SampleList.get_item_list()</span></code></a></li>
+<li><a class="reference internal" href="#HALF.Utils.sample.SampleList.pin_memory"><code class="docutils literal notranslate"><span class="pre">SampleList.pin_memory()</span></code></a></li>
+<li><a class="reference internal" href="#HALF.Utils.sample.SampleList.to"><code class="docutils literal notranslate"><span class="pre">SampleList.to()</span></code></a></li>
+<li><a class="reference internal" href="#HALF.Utils.sample.SampleList.to_dict"><code class="docutils literal notranslate"><span class="pre">SampleList.to_dict()</span></code></a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#HALF.Utils.sample.convert_batch_to_sample_list"><code class="docutils literal notranslate"><span class="pre">convert_batch_to_sample_list()</span></code></a></li>
+<li><a class="reference internal" href="#HALF.Utils.sample.detach_tensor"><code class="docutils literal notranslate"><span class="pre">detach_tensor()</span></code></a></li>
+<li><a class="reference internal" href="#HALF.Utils.sample.to_device"><code class="docutils literal notranslate"><span class="pre">to_device()</span></code></a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#module-HALF.Utils.utils">HALF.Utils.utils</a><ul>
+<li><a class="reference internal" href="#HALF.Utils.utils.camel2snake"><code class="docutils literal notranslate"><span class="pre">camel2snake()</span></code></a></li>
+<li><a class="reference internal" href="#HALF.Utils.utils.now_str"><code class="docutils literal notranslate"><span class="pre">now_str()</span></code></a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -1330,6 +1463,7 @@ Currently, in MMF can be SampleList, Report or a tensor.</p>
     <script src="_static/underscore.js"></script>
     <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
     <script src="_static/doctools.js"></script>
+    <script src="_static/sphinx_highlight.js"></script>
     <script src="_static/scripts/furo.js"></script>
     </body>
 </html>

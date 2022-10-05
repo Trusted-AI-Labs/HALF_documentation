@@ -2,13 +2,13 @@
 <html class="no-js" lang="en">
   <head><meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width,initial-scale=1"/>
-    <meta name="color-scheme" content="light dark"><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+    <meta name="color-scheme" content="light dark"><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
 <link rel="author" title="About these documents" href="about.html" /><link rel="index" title="Index" href="genindex.html" /><link rel="search" title="Search" href="search.html" /><link rel="next" title="HALF.Commons" href="HALF.Commons.html" /><link rel="prev" title="Configuration" href="config.html" />
 
-    <meta name="generator" content="sphinx-5.0.2, furo 2022.06.21"/>
+    <meta name="generator" content="sphinx-5.2.3, furo 2022.09.29"/>
         <title>HALF - HALF documentation</title>
       <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
-    <link rel="stylesheet" type="text/css" href="_static/styles/furo.css?digest=40978830699223671f4072448e654b5958f38b89" />
+    <link rel="stylesheet" type="text/css" href="_static/styles/furo.css?digest=d81277517bee4d6b0349d71bb2661d4890b5617c" />
     <link rel="stylesheet" type="text/css" href="_static/styles/furo-extensions.css?digest=30d1aed668e5c3a91c3e3bf6a60b675221979f0e" />
     
     
@@ -168,6 +168,7 @@
 <li class="toctree-l2"><a class="reference internal" href="HALF.Interfaces.html">HALF.Interfaces</a></li>
 <li class="toctree-l2"><a class="reference internal" href="HALF.Oracle.html">HALF.Oracle</a></li>
 <li class="toctree-l2"><a class="reference internal" href="HALF.Utils.html">HALF.Utils</a></li>
+<li class="toctree-l2"><a class="reference internal" href="HALF.Strategies.html">HALF.Strategies</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="about.html">About</a></li>
@@ -190,7 +191,8 @@
           <span>Back to top</span>
         </a>
         <div class="content-icon-container">
-          <div class="theme-toggle-container theme-toggle-content">
+          
+<div class="theme-toggle-container theme-toggle-content">
             <button class="theme-toggle">
               <div class="visually-hidden">Toggle Light / Dark / Auto color theme</div>
               <svg class="theme-icon-when-auto"><use href="#svg-sun-half"></use></svg>
@@ -209,49 +211,364 @@
 <div class="toctree-wrapper compound">
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="HALF.Commons.html">HALF.Commons</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="HALF.Commons.html#module-HALF.Commons.SingletonMeta">HALF.Commons.SingletonMeta</a></li>
-<li class="toctree-l2"><a class="reference internal" href="HALF.Commons.html#module-HALF.Commons.const">HALF.Commons.const</a></li>
-<li class="toctree-l2"><a class="reference internal" href="HALF.Commons.html#module-HALF.Commons.data">HALF.Commons.data</a></li>
+<li class="toctree-l2"><a class="reference internal" href="HALF.Commons.html#module-HALF.Commons.SingletonMeta">HALF.Commons.SingletonMeta</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="HALF.Commons.html#HALF.Commons.SingletonMeta.SingletonMeta"><code class="docutils literal notranslate"><span class="pre">SingletonMeta</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="HALF.Commons.html#HALF.Commons.SingletonMeta.SingletonMeta.__call__"><code class="docutils literal notranslate"><span class="pre">SingletonMeta.__call__()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="HALF.Commons.html#module-HALF.Commons.const">HALF.Commons.const</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="HALF.Commons.html#HALF.Commons.const.ModelStrategy"><code class="docutils literal notranslate"><span class="pre">ModelStrategy</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="HALF.Commons.html#HALF.Commons.const.ModelStrategy.RESET"><code class="docutils literal notranslate"><span class="pre">ModelStrategy.RESET</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="HALF.Commons.html#HALF.Commons.const.ModelStrategy.UPDATE"><code class="docutils literal notranslate"><span class="pre">ModelStrategy.UPDATE</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="HALF.Commons.html#module-HALF.Commons.data">HALF.Commons.data</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="HALF.Commons.html#HALF.Commons.data.DataLogAccuracy"><code class="docutils literal notranslate"><span class="pre">DataLogAccuracy</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="HALF.Commons.html#HALF.Commons.data.DataLogAccuracy.__init__"><code class="docutils literal notranslate"><span class="pre">DataLogAccuracy.__init__()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="HALF.Commons.html#HALF.Commons.data.DataLogAccuracy.lb_dataset_size"><code class="docutils literal notranslate"><span class="pre">DataLogAccuracy.lb_dataset_size</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="HALF.Commons.html#HALF.Commons.data.DataLogAccuracy.test_acc"><code class="docutils literal notranslate"><span class="pre">DataLogAccuracy.test_acc</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="HALF.Delegates.html">HALF.Delegates</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="HALF.Delegates.html#module-HALF.Delegates.DatasetIncreaseDelegate">HALF.Delegates.DatasetIncreaseDelegate</a></li>
-<li class="toctree-l2"><a class="reference internal" href="HALF.Delegates.html#module-HALF.Delegates.DatasetTestingDelegate">HALF.Delegates.DatasetTestingDelegate</a></li>
-<li class="toctree-l2"><a class="reference internal" href="HALF.Delegates.html#module-HALF.Delegates.ModelTrainingDelegate">HALF.Delegates.ModelTrainingDelegate module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="HALF.Delegates.html#module-HALF.Delegates.DatasetIncreaseDelegate">HALF.Delegates.DatasetIncreaseDelegate</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="HALF.Delegates.html#HALF.Delegates.DatasetIncreaseDelegate.DatasetIncreaseDelegate"><code class="docutils literal notranslate"><span class="pre">DatasetIncreaseDelegate</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="HALF.Delegates.html#HALF.Delegates.DatasetIncreaseDelegate.DatasetIncreaseDelegate.__init__"><code class="docutils literal notranslate"><span class="pre">DatasetIncreaseDelegate.__init__()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="HALF.Delegates.html#HALF.Delegates.DatasetIncreaseDelegate.DatasetIncreaseDelegate.run"><code class="docutils literal notranslate"><span class="pre">DatasetIncreaseDelegate.run()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="HALF.Delegates.html#module-HALF.Delegates.DatasetTestingDelegate">HALF.Delegates.DatasetTestingDelegate</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="HALF.Delegates.html#HALF.Delegates.DatasetTestingDelegate.DatasetTestingDelegate"><code class="docutils literal notranslate"><span class="pre">DatasetTestingDelegate</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="HALF.Delegates.html#HALF.Delegates.DatasetTestingDelegate.DatasetTestingDelegate.__init__"><code class="docutils literal notranslate"><span class="pre">DatasetTestingDelegate.__init__()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="HALF.Delegates.html#HALF.Delegates.DatasetTestingDelegate.DatasetTestingDelegate.run"><code class="docutils literal notranslate"><span class="pre">DatasetTestingDelegate.run()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="HALF.Delegates.html#module-HALF.Delegates.ModelTrainingDelegate">HALF.Delegates.ModelTrainingDelegate module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="HALF.Delegates.html#HALF.Delegates.ModelTrainingDelegate.ModelTrainingDelegate"><code class="docutils literal notranslate"><span class="pre">ModelTrainingDelegate</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="HALF.Delegates.html#HALF.Delegates.ModelTrainingDelegate.ModelTrainingDelegate.__init__"><code class="docutils literal notranslate"><span class="pre">ModelTrainingDelegate.__init__()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="HALF.Delegates.html#HALF.Delegates.ModelTrainingDelegate.ModelTrainingDelegate.run"><code class="docutils literal notranslate"><span class="pre">ModelTrainingDelegate.run()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="HALF.Hooks.html">HALF.Hooks</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="HALF.Hooks.html#module-HALF.Hooks.LoadModelHook">HALF.Hooks.LoadModelHook</a></li>
-<li class="toctree-l2"><a class="reference internal" href="HALF.Hooks.html#module-HALF.Hooks.SaveModelHook">HALF.Hooks.SaveModelHook</a></li>
-<li class="toctree-l2"><a class="reference internal" href="HALF.Hooks.html#module-HALF.Hooks.SetupTensorboardHook">HALF.Hooks.SetupTensorboardHook</a></li>
-<li class="toctree-l2"><a class="reference internal" href="HALF.Hooks.html#module-HALF.Hooks.TestAccuracyLoggerHook">HALF.Hooks.TestAccuracyLoggerHook</a></li>
-<li class="toctree-l2"><a class="reference internal" href="HALF.Hooks.html#module-HALF.Hooks.WriteAccuracyLogsHook">HALF.Hooks.WriteAccuracyLogsHook</a></li>
+<li class="toctree-l2"><a class="reference internal" href="HALF.Hooks.html#module-HALF.Hooks.LoadModelHook">HALF.Hooks.LoadModelHook</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="HALF.Hooks.html#HALF.Hooks.LoadModelHook.LoadModelHook"><code class="docutils literal notranslate"><span class="pre">LoadModelHook</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="HALF.Hooks.html#HALF.Hooks.LoadModelHook.LoadModelHook.__init__"><code class="docutils literal notranslate"><span class="pre">LoadModelHook.__init__()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="HALF.Hooks.html#HALF.Hooks.LoadModelHook.LoadModelHook.apply"><code class="docutils literal notranslate"><span class="pre">LoadModelHook.apply()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="HALF.Hooks.html#HALF.Hooks.LoadModelHook.LoadModelHook.get_loading_path"><code class="docutils literal notranslate"><span class="pre">LoadModelHook.get_loading_path()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="HALF.Hooks.html#module-HALF.Hooks.SaveModelHook">HALF.Hooks.SaveModelHook</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="HALF.Hooks.html#HALF.Hooks.SaveModelHook.SaveModelHook"><code class="docutils literal notranslate"><span class="pre">SaveModelHook</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="HALF.Hooks.html#HALF.Hooks.SaveModelHook.SaveModelHook.__init__"><code class="docutils literal notranslate"><span class="pre">SaveModelHook.__init__()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="HALF.Hooks.html#HALF.Hooks.SaveModelHook.SaveModelHook.apply"><code class="docutils literal notranslate"><span class="pre">SaveModelHook.apply()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="HALF.Hooks.html#HALF.Hooks.SaveModelHook.SaveModelHook.get_saving_path"><code class="docutils literal notranslate"><span class="pre">SaveModelHook.get_saving_path()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="HALF.Hooks.html#module-HALF.Hooks.SetupTensorboardHook">HALF.Hooks.SetupTensorboardHook</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="HALF.Hooks.html#HALF.Hooks.SetupTensorboardHook.SetupTensorboardHook"><code class="docutils literal notranslate"><span class="pre">SetupTensorboardHook</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="HALF.Hooks.html#HALF.Hooks.SetupTensorboardHook.SetupTensorboardHook.__init__"><code class="docutils literal notranslate"><span class="pre">SetupTensorboardHook.__init__()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="HALF.Hooks.html#HALF.Hooks.SetupTensorboardHook.SetupTensorboardHook.apply"><code class="docutils literal notranslate"><span class="pre">SetupTensorboardHook.apply()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="HALF.Hooks.html#HALF.Hooks.SetupTensorboardHook.SetupTensorboardHook.get_experiment_name"><code class="docutils literal notranslate"><span class="pre">SetupTensorboardHook.get_experiment_name()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="HALF.Hooks.html#module-HALF.Hooks.TestAccuracyLoggerHook">HALF.Hooks.TestAccuracyLoggerHook</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="HALF.Hooks.html#HALF.Hooks.TestAccuracyLoggerHook.TestAccuracyLoggerHook"><code class="docutils literal notranslate"><span class="pre">TestAccuracyLoggerHook</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="HALF.Hooks.html#HALF.Hooks.TestAccuracyLoggerHook.TestAccuracyLoggerHook.__init__"><code class="docutils literal notranslate"><span class="pre">TestAccuracyLoggerHook.__init__()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="HALF.Hooks.html#HALF.Hooks.TestAccuracyLoggerHook.TestAccuracyLoggerHook.apply"><code class="docutils literal notranslate"><span class="pre">TestAccuracyLoggerHook.apply()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="HALF.Hooks.html#module-HALF.Hooks.WriteAccuracyLogsHook">HALF.Hooks.WriteAccuracyLogsHook</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="HALF.Hooks.html#HALF.Hooks.WriteAccuracyLogsHook.WriteAccuracyLogsHook"><code class="docutils literal notranslate"><span class="pre">WriteAccuracyLogsHook</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="HALF.Hooks.html#HALF.Hooks.WriteAccuracyLogsHook.WriteAccuracyLogsHook.__init__"><code class="docutils literal notranslate"><span class="pre">WriteAccuracyLogsHook.__init__()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="HALF.Hooks.html#HALF.Hooks.WriteAccuracyLogsHook.WriteAccuracyLogsHook.apply"><code class="docutils literal notranslate"><span class="pre">WriteAccuracyLogsHook.apply()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="HALF.Interfaces.html">HALF.Interfaces</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="HALF.Interfaces.html#module-HALF.Interfaces.AbstractModel">HALF.Interfaces.AbstractModel</a></li>
-<li class="toctree-l2"><a class="reference internal" href="HALF.Interfaces.html#module-HALF.Interfaces.IDataset">HALF.Interfaces.IDataset</a></li>
-<li class="toctree-l2"><a class="reference internal" href="HALF.Interfaces.html#module-HALF.Interfaces.IDelegate">HALF.Interfaces.IDelegate</a></li>
-<li class="toctree-l2"><a class="reference internal" href="HALF.Interfaces.html#module-HALF.Interfaces.IHook">HALF.Interfaces.IHook</a></li>
-<li class="toctree-l2"><a class="reference internal" href="HALF.Interfaces.html#module-HALF.Interfaces.IOracle">HALF.Interfaces.IOracle</a></li>
-<li class="toctree-l2"><a class="reference internal" href="HALF.Interfaces.html#module-HALF.Interfaces.IUnifiedStrategy">HALF.Interfaces.IUnifiedStrategy</a></li>
+<li class="toctree-l2"><a class="reference internal" href="HALF.Interfaces.html#module-HALF.Interfaces.AbstractModel">HALF.Interfaces.AbstractModel</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="HALF.Interfaces.html#HALF.Interfaces.AbstractModel.AbstractModel"><code class="docutils literal notranslate"><span class="pre">AbstractModel</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="HALF.Interfaces.html#HALF.Interfaces.AbstractModel.AbstractModel.forward"><code class="docutils literal notranslate"><span class="pre">AbstractModel.forward()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="HALF.Interfaces.html#HALF.Interfaces.AbstractModel.AbstractModel.get_embedding_dim"><code class="docutils literal notranslate"><span class="pre">AbstractModel.get_embedding_dim()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="HALF.Interfaces.html#HALF.Interfaces.AbstractModel.AbstractModel.reset"><code class="docutils literal notranslate"><span class="pre">AbstractModel.reset()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="HALF.Interfaces.html#HALF.Interfaces.AbstractModel.AbstractModel.training"><code class="docutils literal notranslate"><span class="pre">AbstractModel.training</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="HALF.Interfaces.html#module-HALF.Interfaces.IDataset">HALF.Interfaces.IDataset</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="HALF.Interfaces.html#HALF.Interfaces.IDataset.IDataset"><code class="docutils literal notranslate"><span class="pre">IDataset</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="HALF.Interfaces.html#HALF.Interfaces.IDataset.IDataset.create_datasets"><code class="docutils literal notranslate"><span class="pre">IDataset.create_datasets()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="HALF.Interfaces.html#HALF.Interfaces.IDataset.IDataset.test_transform"><code class="docutils literal notranslate"><span class="pre">IDataset.test_transform</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="HALF.Interfaces.html#HALF.Interfaces.IDataset.IDataset.train_transform"><code class="docutils literal notranslate"><span class="pre">IDataset.train_transform</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="HALF.Interfaces.html#module-HALF.Interfaces.IDelegate">HALF.Interfaces.IDelegate</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="HALF.Interfaces.html#HALF.Interfaces.IDelegate.IDelegate"><code class="docutils literal notranslate"><span class="pre">IDelegate</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="HALF.Interfaces.html#HALF.Interfaces.IDelegate.IDelegate.run"><code class="docutils literal notranslate"><span class="pre">IDelegate.run()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="HALF.Interfaces.html#module-HALF.Interfaces.IHook">HALF.Interfaces.IHook</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="HALF.Interfaces.html#HALF.Interfaces.IHook.ActiveLearner"><code class="docutils literal notranslate"><span class="pre">ActiveLearner</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="HALF.Interfaces.html#HALF.Interfaces.IHook.IHook"><code class="docutils literal notranslate"><span class="pre">IHook</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="HALF.Interfaces.html#HALF.Interfaces.IHook.IHook.apply"><code class="docutils literal notranslate"><span class="pre">IHook.apply()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="HALF.Interfaces.html#module-HALF.Interfaces.IOracle">HALF.Interfaces.IOracle</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="HALF.Interfaces.html#HALF.Interfaces.IOracle.IOracle"><code class="docutils literal notranslate"><span class="pre">IOracle</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="HALF.Interfaces.html#HALF.Interfaces.IOracle.IOracle.query"><code class="docutils literal notranslate"><span class="pre">IOracle.query()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="HALF.Interfaces.html#module-HALF.Interfaces.IUnifiedStrategy">HALF.Interfaces.IUnifiedStrategy</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="HALF.Interfaces.html#HALF.Interfaces.IUnifiedStrategy.IUnifiedStrategy"><code class="docutils literal notranslate"><span class="pre">IUnifiedStrategy</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="HALF.Interfaces.html#HALF.Interfaces.IUnifiedStrategy.IUnifiedStrategy.__init__"><code class="docutils literal notranslate"><span class="pre">IUnifiedStrategy.__init__()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="HALF.Interfaces.html#HALF.Interfaces.IUnifiedStrategy.IUnifiedStrategy.query"><code class="docutils literal notranslate"><span class="pre">IUnifiedStrategy.query()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="HALF.Oracle.html">HALF.Oracle</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="HALF.Oracle.html#module-HALF.Oracle.SimulatedOracle">HALF.Oracle.SimulatedOracle</a></li>
+<li class="toctree-l2"><a class="reference internal" href="HALF.Oracle.html#module-HALF.Oracle.SimulatedOracle">HALF.Oracle.SimulatedOracle</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="HALF.Oracle.html#HALF.Oracle.SimulatedOracle.SimulatedOracle"><code class="docutils literal notranslate"><span class="pre">SimulatedOracle</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="HALF.Oracle.html#HALF.Oracle.SimulatedOracle.SimulatedOracle.__init__"><code class="docutils literal notranslate"><span class="pre">SimulatedOracle.__init__()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="HALF.Oracle.html#HALF.Oracle.SimulatedOracle.SimulatedOracle.query"><code class="docutils literal notranslate"><span class="pre">SimulatedOracle.query()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="HALF.Utils.html">HALF.Utils</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="HALF.Utils.html#module-HALF.Utils.ALDataModule">HALF.Utils.ALDataModule</a></li>
-<li class="toctree-l2"><a class="reference internal" href="HALF.Utils.html#module-HALF.Utils.ALDatasetManager">HALF.Utils.ALDatasetManager</a></li>
-<li class="toctree-l2"><a class="reference internal" href="HALF.Utils.html#module-HALF.Utils.ActiveLearner">HALF.Utils.ActiveLearner</a></li>
-<li class="toctree-l2"><a class="reference internal" href="HALF.Utils.html#module-HALF.Utils.ActiveLearnerBuilder">HALF.Utils.ActiveLearnerBuilder</a></li>
-<li class="toctree-l2"><a class="reference internal" href="HALF.Utils.html#module-HALF.Utils.Config">HALF.Utils.Config</a></li>
-<li class="toctree-l2"><a class="reference internal" href="HALF.Utils.html#module-HALF.Utils.ConfigActiveLearner">HALF.Utils.ConfigActiveLearner</a></li>
-<li class="toctree-l2"><a class="reference internal" href="HALF.Utils.html#module-HALF.Utils.GlobalIndexDataset">HALF.Utils.GlobalIndexDataset</a></li>
-<li class="toctree-l2"><a class="reference internal" href="HALF.Utils.html#module-HALF.Utils.Registry">HALF.Utils.Registry</a></li>
-<li class="toctree-l2"><a class="reference internal" href="HALF.Utils.html#module-HALF.Utils.sample">HALF.Utils.sample</a></li>
-<li class="toctree-l2"><a class="reference internal" href="HALF.Utils.html#module-HALF.Utils.utils">HALF.Utils.utils</a></li>
+<li class="toctree-l2"><a class="reference internal" href="HALF.Utils.html#module-HALF.Utils.ALDataModule">HALF.Utils.ALDataModule</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="HALF.Utils.html#HALF.Utils.ALDataModule.ALDataModule"><code class="docutils literal notranslate"><span class="pre">ALDataModule</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="HALF.Utils.html#HALF.Utils.ALDataModule.ALDataModule.__init__"><code class="docutils literal notranslate"><span class="pre">ALDataModule.__init__()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="HALF.Utils.html#HALF.Utils.ALDataModule.ALDataModule.set_test_mode"><code class="docutils literal notranslate"><span class="pre">ALDataModule.set_test_mode()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="HALF.Utils.html#HALF.Utils.ALDataModule.ALDataModule.set_train_mode"><code class="docutils literal notranslate"><span class="pre">ALDataModule.set_train_mode()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="HALF.Utils.html#module-HALF.Utils.ALDatasetManager">HALF.Utils.ALDatasetManager</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="HALF.Utils.html#HALF.Utils.ALDatasetManager.ALDatasetManager"><code class="docutils literal notranslate"><span class="pre">ALDatasetManager</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="HALF.Utils.html#HALF.Utils.ALDatasetManager.ALDatasetManager.__init__"><code class="docutils literal notranslate"><span class="pre">ALDatasetManager.__init__()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="HALF.Utils.html#HALF.Utils.ALDatasetManager.ALDatasetManager.dataset_labeled"><code class="docutils literal notranslate"><span class="pre">ALDatasetManager.dataset_labeled</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="HALF.Utils.html#HALF.Utils.ALDatasetManager.ALDatasetManager.dataset_test"><code class="docutils literal notranslate"><span class="pre">ALDatasetManager.dataset_test</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="HALF.Utils.html#HALF.Utils.ALDatasetManager.ALDatasetManager.dataset_unlabeled"><code class="docutils literal notranslate"><span class="pre">ALDatasetManager.dataset_unlabeled</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="HALF.Utils.html#HALF.Utils.ALDatasetManager.ALDatasetManager.dataset_unlabeled_lb"><code class="docutils literal notranslate"><span class="pre">ALDatasetManager.dataset_unlabeled_lb</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="HALF.Utils.html#HALF.Utils.ALDatasetManager.ALDatasetManager.set_test_mode"><code class="docutils literal notranslate"><span class="pre">ALDatasetManager.set_test_mode()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="HALF.Utils.html#HALF.Utils.ALDatasetManager.ALDatasetManager.set_train_mode"><code class="docutils literal notranslate"><span class="pre">ALDatasetManager.set_train_mode()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="HALF.Utils.html#HALF.Utils.ALDatasetManager.ALDatasetManager.subset_unlabeled"><code class="docutils literal notranslate"><span class="pre">ALDatasetManager.subset_unlabeled()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="HALF.Utils.html#HALF.Utils.ALDatasetManager.ALDatasetManager.update"><code class="docutils literal notranslate"><span class="pre">ALDatasetManager.update()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="HALF.Utils.html#module-HALF.Utils.ActiveLearner">HALF.Utils.ActiveLearner</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="HALF.Utils.html#HALF.Utils.ActiveLearner.ActiveLearner"><code class="docutils literal notranslate"><span class="pre">ActiveLearner</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="HALF.Utils.html#HALF.Utils.ActiveLearner.ActiveLearner.oracle"><code class="docutils literal notranslate"><span class="pre">ActiveLearner.oracle</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="HALF.Utils.html#HALF.Utils.ActiveLearner.ActiveLearner.dataset_manager"><code class="docutils literal notranslate"><span class="pre">ActiveLearner.dataset_manager</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="HALF.Utils.html#HALF.Utils.ActiveLearner.ActiveLearner.model"><code class="docutils literal notranslate"><span class="pre">ActiveLearner.model</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="HALF.Utils.html#HALF.Utils.ActiveLearner.ActiveLearner.dict_hooks"><code class="docutils literal notranslate"><span class="pre">ActiveLearner.dict_hooks</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="HALF.Utils.html#HALF.Utils.ActiveLearner.ActiveLearner.ds_hook"><code class="docutils literal notranslate"><span class="pre">ActiveLearner.ds_hook</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="HALF.Utils.html#HALF.Utils.ActiveLearner.ActiveLearner.i_round"><code class="docutils literal notranslate"><span class="pre">ActiveLearner.i_round</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="HALF.Utils.html#HALF.Utils.ActiveLearner.ActiveLearner.best_test_accuracy"><code class="docutils literal notranslate"><span class="pre">ActiveLearner.best_test_accuracy</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="HALF.Utils.html#HALF.Utils.ActiveLearner.ActiveLearner.nb_oracle_labeled"><code class="docutils literal notranslate"><span class="pre">ActiveLearner.nb_oracle_labeled</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="HALF.Utils.html#HALF.Utils.ActiveLearner.ActiveLearner.configAL"><code class="docutils literal notranslate"><span class="pre">ActiveLearner.configAL</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="HALF.Utils.html#HALF.Utils.ActiveLearner.ActiveLearner.trainer"><code class="docutils literal notranslate"><span class="pre">ActiveLearner.trainer</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="HALF.Utils.html#HALF.Utils.ActiveLearner.ActiveLearner.nb_label_increased"><code class="docutils literal notranslate"><span class="pre">ActiveLearner.nb_label_increased</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="HALF.Utils.html#HALF.Utils.ActiveLearner.ActiveLearner.current_test_results"><code class="docutils literal notranslate"><span class="pre">ActiveLearner.current_test_results</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="HALF.Utils.html#HALF.Utils.ActiveLearner.ActiveLearner.__init__"><code class="docutils literal notranslate"><span class="pre">ActiveLearner.__init__()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="HALF.Utils.html#HALF.Utils.ActiveLearner.ActiveLearner.apply_model_strategy"><code class="docutils literal notranslate"><span class="pre">ActiveLearner.apply_model_strategy()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="HALF.Utils.html#HALF.Utils.ActiveLearner.ActiveLearner.dataset_test"><code class="docutils literal notranslate"><span class="pre">ActiveLearner.dataset_test</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="HALF.Utils.html#HALF.Utils.ActiveLearner.ActiveLearner.increase_label"><code class="docutils literal notranslate"><span class="pre">ActiveLearner.increase_label()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="HALF.Utils.html#HALF.Utils.ActiveLearner.ActiveLearner.on_AL_iteration_begin"><code class="docutils literal notranslate"><span class="pre">ActiveLearner.on_AL_iteration_begin()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="HALF.Utils.html#HALF.Utils.ActiveLearner.ActiveLearner.on_AL_iteration_end"><code class="docutils literal notranslate"><span class="pre">ActiveLearner.on_AL_iteration_end()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="HALF.Utils.html#HALF.Utils.ActiveLearner.ActiveLearner.on_AL_loop_begin"><code class="docutils literal notranslate"><span class="pre">ActiveLearner.on_AL_loop_begin()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="HALF.Utils.html#HALF.Utils.ActiveLearner.ActiveLearner.on_AL_loop_end"><code class="docutils literal notranslate"><span class="pre">ActiveLearner.on_AL_loop_end()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="HALF.Utils.html#HALF.Utils.ActiveLearner.ActiveLearner.on_increase_dataset_begin"><code class="docutils literal notranslate"><span class="pre">ActiveLearner.on_increase_dataset_begin()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="HALF.Utils.html#HALF.Utils.ActiveLearner.ActiveLearner.on_increase_dataset_end"><code class="docutils literal notranslate"><span class="pre">ActiveLearner.on_increase_dataset_end()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="HALF.Utils.html#HALF.Utils.ActiveLearner.ActiveLearner.on_test_begin"><code class="docutils literal notranslate"><span class="pre">ActiveLearner.on_test_begin()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="HALF.Utils.html#HALF.Utils.ActiveLearner.ActiveLearner.on_test_end"><code class="docutils literal notranslate"><span class="pre">ActiveLearner.on_test_end()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="HALF.Utils.html#HALF.Utils.ActiveLearner.ActiveLearner.on_train_begin"><code class="docutils literal notranslate"><span class="pre">ActiveLearner.on_train_begin()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="HALF.Utils.html#HALF.Utils.ActiveLearner.ActiveLearner.on_train_end"><code class="docutils literal notranslate"><span class="pre">ActiveLearner.on_train_end()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="HALF.Utils.html#HALF.Utils.ActiveLearner.ActiveLearner.register_hook"><code class="docutils literal notranslate"><span class="pre">ActiveLearner.register_hook()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="HALF.Utils.html#HALF.Utils.ActiveLearner.ActiveLearner.run"><code class="docutils literal notranslate"><span class="pre">ActiveLearner.run()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="HALF.Utils.html#HALF.Utils.ActiveLearner.ActiveLearner.set_list_hook"><code class="docutils literal notranslate"><span class="pre">ActiveLearner.set_list_hook()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="HALF.Utils.html#HALF.Utils.ActiveLearner.ActiveLearner.stop_condition"><code class="docutils literal notranslate"><span class="pre">ActiveLearner.stop_condition()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="HALF.Utils.html#HALF.Utils.ActiveLearner.ActiveLearner.test"><code class="docutils literal notranslate"><span class="pre">ActiveLearner.test()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="HALF.Utils.html#HALF.Utils.ActiveLearner.ActiveLearner.train"><code class="docutils literal notranslate"><span class="pre">ActiveLearner.train()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="HALF.Utils.html#module-HALF.Utils.ActiveLearnerBuilder">HALF.Utils.ActiveLearnerBuilder</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="HALF.Utils.html#HALF.Utils.ActiveLearnerBuilder.ActiveLearnerBuilder"><code class="docutils literal notranslate"><span class="pre">ActiveLearnerBuilder</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="HALF.Utils.html#HALF.Utils.ActiveLearnerBuilder.ActiveLearnerBuilder.__init__"><code class="docutils literal notranslate"><span class="pre">ActiveLearnerBuilder.__init__()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="HALF.Utils.html#HALF.Utils.ActiveLearnerBuilder.ActiveLearnerBuilder.add_defaults_hooks"><code class="docutils literal notranslate"><span class="pre">ActiveLearnerBuilder.add_defaults_hooks()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="HALF.Utils.html#HALF.Utils.ActiveLearnerBuilder.ActiveLearnerBuilder.add_hook"><code class="docutils literal notranslate"><span class="pre">ActiveLearnerBuilder.add_hook()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="HALF.Utils.html#HALF.Utils.ActiveLearnerBuilder.ActiveLearnerBuilder.build"><code class="docutils literal notranslate"><span class="pre">ActiveLearnerBuilder.build()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="HALF.Utils.html#HALF.Utils.ActiveLearnerBuilder.ActiveLearnerBuilder.hydrate_hook_dict"><code class="docutils literal notranslate"><span class="pre">ActiveLearnerBuilder.hydrate_hook_dict()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="HALF.Utils.html#HALF.Utils.ActiveLearnerBuilder.ActiveLearnerBuilder.remove_hook"><code class="docutils literal notranslate"><span class="pre">ActiveLearnerBuilder.remove_hook()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="HALF.Utils.html#HALF.Utils.ActiveLearnerBuilder.ActiveLearnerBuilder.reset"><code class="docutils literal notranslate"><span class="pre">ActiveLearnerBuilder.reset()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="HALF.Utils.html#HALF.Utils.ActiveLearnerBuilder.ActiveLearnerBuilder.set_data_module"><code class="docutils literal notranslate"><span class="pre">ActiveLearnerBuilder.set_data_module()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="HALF.Utils.html#HALF.Utils.ActiveLearnerBuilder.ActiveLearnerBuilder.set_model"><code class="docutils literal notranslate"><span class="pre">ActiveLearnerBuilder.set_model()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="HALF.Utils.html#HALF.Utils.ActiveLearnerBuilder.ActiveLearnerBuilder.set_oracle"><code class="docutils literal notranslate"><span class="pre">ActiveLearnerBuilder.set_oracle()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="HALF.Utils.html#HALF.Utils.ActiveLearnerBuilder.HookAttachData"><code class="docutils literal notranslate"><span class="pre">HookAttachData</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="HALF.Utils.html#HALF.Utils.ActiveLearnerBuilder.HookAttachData.__init__"><code class="docutils literal notranslate"><span class="pre">HookAttachData.__init__()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="HALF.Utils.html#HALF.Utils.ActiveLearnerBuilder.HookAttachData.args"><code class="docutils literal notranslate"><span class="pre">HookAttachData.args</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="HALF.Utils.html#HALF.Utils.ActiveLearnerBuilder.HookAttachData.attach_point"><code class="docutils literal notranslate"><span class="pre">HookAttachData.attach_point</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="HALF.Utils.html#HALF.Utils.ActiveLearnerBuilder.HookAttachData.class_name"><code class="docutils literal notranslate"><span class="pre">HookAttachData.class_name</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="HALF.Utils.html#module-HALF.Utils.Config">HALF.Utils.Config</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="HALF.Utils.html#HALF.Utils.Config.Config"><code class="docutils literal notranslate"><span class="pre">Config</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="HALF.Utils.html#HALF.Utils.Config.Config.CONFIG"><code class="docutils literal notranslate"><span class="pre">Config.CONFIG</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="HALF.Utils.html#HALF.Utils.Config.Config.data"><code class="docutils literal notranslate"><span class="pre">Config.data</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="HALF.Utils.html#HALF.Utils.Config.Config.setup"><code class="docutils literal notranslate"><span class="pre">Config.setup()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="HALF.Utils.html#module-HALF.Utils.ConfigActiveLearner">HALF.Utils.ConfigActiveLearner</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="HALF.Utils.html#HALF.Utils.ConfigActiveLearner.ConfigActiveLearner"><code class="docutils literal notranslate"><span class="pre">ConfigActiveLearner</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="HALF.Utils.html#HALF.Utils.ConfigActiveLearner.ConfigActiveLearner.__init__"><code class="docutils literal notranslate"><span class="pre">ConfigActiveLearner.__init__()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="HALF.Utils.html#module-HALF.Utils.GlobalIndexDataset">HALF.Utils.GlobalIndexDataset</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="HALF.Utils.html#HALF.Utils.GlobalIndexDataset.GlobalIndexDataset"><code class="docutils literal notranslate"><span class="pre">GlobalIndexDataset</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="HALF.Utils.html#HALF.Utils.GlobalIndexDataset.GlobalIndexDataset.__init__"><code class="docutils literal notranslate"><span class="pre">GlobalIndexDataset.__init__()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="HALF.Utils.html#half-utils-registry">HALF.Utils.Registry</a></li>
+<li class="toctree-l2"><a class="reference internal" href="HALF.Utils.html#module-HALF.Utils.sample">HALF.Utils.sample</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="HALF.Utils.html#HALF.Utils.sample.Sample"><code class="docutils literal notranslate"><span class="pre">Sample</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="HALF.Utils.html#HALF.Utils.sample.Sample.__init__"><code class="docutils literal notranslate"><span class="pre">Sample.__init__()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="HALF.Utils.html#HALF.Utils.sample.Sample.fields"><code class="docutils literal notranslate"><span class="pre">Sample.fields()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="HALF.Utils.html#HALF.Utils.sample.SampleList"><code class="docutils literal notranslate"><span class="pre">SampleList</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="HALF.Utils.html#HALF.Utils.sample.SampleList.__init__"><code class="docutils literal notranslate"><span class="pre">SampleList.__init__()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="HALF.Utils.html#HALF.Utils.sample.SampleList.add_field"><code class="docutils literal notranslate"><span class="pre">SampleList.add_field()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="HALF.Utils.html#HALF.Utils.sample.SampleList.copy"><code class="docutils literal notranslate"><span class="pre">SampleList.copy()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="HALF.Utils.html#HALF.Utils.sample.SampleList.detach"><code class="docutils literal notranslate"><span class="pre">SampleList.detach()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="HALF.Utils.html#HALF.Utils.sample.SampleList.fields"><code class="docutils literal notranslate"><span class="pre">SampleList.fields()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="HALF.Utils.html#HALF.Utils.sample.SampleList.get_batch_size"><code class="docutils literal notranslate"><span class="pre">SampleList.get_batch_size()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="HALF.Utils.html#HALF.Utils.sample.SampleList.get_device"><code class="docutils literal notranslate"><span class="pre">SampleList.get_device()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="HALF.Utils.html#HALF.Utils.sample.SampleList.get_field"><code class="docutils literal notranslate"><span class="pre">SampleList.get_field()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="HALF.Utils.html#HALF.Utils.sample.SampleList.get_fields"><code class="docutils literal notranslate"><span class="pre">SampleList.get_fields()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="HALF.Utils.html#HALF.Utils.sample.SampleList.get_item_list"><code class="docutils literal notranslate"><span class="pre">SampleList.get_item_list()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="HALF.Utils.html#HALF.Utils.sample.SampleList.pin_memory"><code class="docutils literal notranslate"><span class="pre">SampleList.pin_memory()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="HALF.Utils.html#HALF.Utils.sample.SampleList.to"><code class="docutils literal notranslate"><span class="pre">SampleList.to()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="HALF.Utils.html#HALF.Utils.sample.SampleList.to_dict"><code class="docutils literal notranslate"><span class="pre">SampleList.to_dict()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="HALF.Utils.html#HALF.Utils.sample.convert_batch_to_sample_list"><code class="docutils literal notranslate"><span class="pre">convert_batch_to_sample_list()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="HALF.Utils.html#HALF.Utils.sample.detach_tensor"><code class="docutils literal notranslate"><span class="pre">detach_tensor()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="HALF.Utils.html#HALF.Utils.sample.to_device"><code class="docutils literal notranslate"><span class="pre">to_device()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="HALF.Utils.html#module-HALF.Utils.utils">HALF.Utils.utils</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="HALF.Utils.html#HALF.Utils.utils.camel2snake"><code class="docutils literal notranslate"><span class="pre">camel2snake()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="HALF.Utils.html#HALF.Utils.utils.now_str"><code class="docutils literal notranslate"><span class="pre">now_str()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="HALF.Strategies.html">HALF.Strategies</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="HALF.Strategies.html#half-strategies-wrap-distil-util">HALF.Strategies.wrap_distil_util</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="HALF.Strategies.html#strategies-from-the-distil-library">Strategies from the <span class="xref std std-doc">Distil</span> library</a></li>
+<li class="toctree-l3"><a class="reference internal" href="HALF.Strategies.html#strategies-adapted-from-cure-lab">Strategies adapted from cure-lab</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="HALF.Strategies.html#module-HALF.Strategies.sequence_gcn.CoreGCN">CoreGCN</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="HALF.Strategies.html#HALF.Strategies.sequence_gcn.CoreGCN.__delattr__"><code class="docutils literal notranslate"><span class="pre">__delattr__()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="HALF.Strategies.html#HALF.Strategies.sequence_gcn.CoreGCN.__dir__"><code class="docutils literal notranslate"><span class="pre">__dir__()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="HALF.Strategies.html#HALF.Strategies.sequence_gcn.CoreGCN.__eq__"><code class="docutils literal notranslate"><span class="pre">__eq__()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="HALF.Strategies.html#HALF.Strategies.sequence_gcn.CoreGCN.__format__"><code class="docutils literal notranslate"><span class="pre">__format__()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="HALF.Strategies.html#HALF.Strategies.sequence_gcn.CoreGCN.__ge__"><code class="docutils literal notranslate"><span class="pre">__ge__()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="HALF.Strategies.html#HALF.Strategies.sequence_gcn.CoreGCN.__getattribute__"><code class="docutils literal notranslate"><span class="pre">__getattribute__()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="HALF.Strategies.html#HALF.Strategies.sequence_gcn.CoreGCN.__gt__"><code class="docutils literal notranslate"><span class="pre">__gt__()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="HALF.Strategies.html#HALF.Strategies.sequence_gcn.CoreGCN.__hash__"><code class="docutils literal notranslate"><span class="pre">__hash__()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="HALF.Strategies.html#HALF.Strategies.sequence_gcn.CoreGCN.__init_subclass__"><code class="docutils literal notranslate"><span class="pre">__init_subclass__()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="HALF.Strategies.html#HALF.Strategies.sequence_gcn.CoreGCN.__le__"><code class="docutils literal notranslate"><span class="pre">__le__()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="HALF.Strategies.html#HALF.Strategies.sequence_gcn.CoreGCN.__lt__"><code class="docutils literal notranslate"><span class="pre">__lt__()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="HALF.Strategies.html#HALF.Strategies.sequence_gcn.CoreGCN.__ne__"><code class="docutils literal notranslate"><span class="pre">__ne__()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="HALF.Strategies.html#HALF.Strategies.sequence_gcn.CoreGCN.__new__"><code class="docutils literal notranslate"><span class="pre">__new__()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="HALF.Strategies.html#HALF.Strategies.sequence_gcn.CoreGCN.__reduce__"><code class="docutils literal notranslate"><span class="pre">__reduce__()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="HALF.Strategies.html#HALF.Strategies.sequence_gcn.CoreGCN.__reduce_ex__"><code class="docutils literal notranslate"><span class="pre">__reduce_ex__()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="HALF.Strategies.html#HALF.Strategies.sequence_gcn.CoreGCN.__repr__"><code class="docutils literal notranslate"><span class="pre">__repr__()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="HALF.Strategies.html#HALF.Strategies.sequence_gcn.CoreGCN.__setattr__"><code class="docutils literal notranslate"><span class="pre">__setattr__()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="HALF.Strategies.html#HALF.Strategies.sequence_gcn.CoreGCN.__sizeof__"><code class="docutils literal notranslate"><span class="pre">__sizeof__()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="HALF.Strategies.html#HALF.Strategies.sequence_gcn.CoreGCN.__str__"><code class="docutils literal notranslate"><span class="pre">__str__()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="HALF.Strategies.html#HALF.Strategies.sequence_gcn.CoreGCN.__subclasshook__"><code class="docutils literal notranslate"><span class="pre">__subclasshook__()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="HALF.Strategies.html#module-HALF.Strategies.sequence_gcn.UncertainGCN">UncertainGCN</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="HALF.Strategies.html#HALF.Strategies.sequence_gcn.UncertainGCN.__delattr__"><code class="docutils literal notranslate"><span class="pre">__delattr__()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="HALF.Strategies.html#HALF.Strategies.sequence_gcn.UncertainGCN.__dir__"><code class="docutils literal notranslate"><span class="pre">__dir__()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="HALF.Strategies.html#HALF.Strategies.sequence_gcn.UncertainGCN.__eq__"><code class="docutils literal notranslate"><span class="pre">__eq__()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="HALF.Strategies.html#HALF.Strategies.sequence_gcn.UncertainGCN.__format__"><code class="docutils literal notranslate"><span class="pre">__format__()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="HALF.Strategies.html#HALF.Strategies.sequence_gcn.UncertainGCN.__ge__"><code class="docutils literal notranslate"><span class="pre">__ge__()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="HALF.Strategies.html#HALF.Strategies.sequence_gcn.UncertainGCN.__getattribute__"><code class="docutils literal notranslate"><span class="pre">__getattribute__()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="HALF.Strategies.html#HALF.Strategies.sequence_gcn.UncertainGCN.__gt__"><code class="docutils literal notranslate"><span class="pre">__gt__()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="HALF.Strategies.html#HALF.Strategies.sequence_gcn.UncertainGCN.__hash__"><code class="docutils literal notranslate"><span class="pre">__hash__()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="HALF.Strategies.html#HALF.Strategies.sequence_gcn.UncertainGCN.__init_subclass__"><code class="docutils literal notranslate"><span class="pre">__init_subclass__()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="HALF.Strategies.html#HALF.Strategies.sequence_gcn.UncertainGCN.__le__"><code class="docutils literal notranslate"><span class="pre">__le__()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="HALF.Strategies.html#HALF.Strategies.sequence_gcn.UncertainGCN.__lt__"><code class="docutils literal notranslate"><span class="pre">__lt__()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="HALF.Strategies.html#HALF.Strategies.sequence_gcn.UncertainGCN.__ne__"><code class="docutils literal notranslate"><span class="pre">__ne__()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="HALF.Strategies.html#HALF.Strategies.sequence_gcn.UncertainGCN.__new__"><code class="docutils literal notranslate"><span class="pre">__new__()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="HALF.Strategies.html#HALF.Strategies.sequence_gcn.UncertainGCN.__reduce__"><code class="docutils literal notranslate"><span class="pre">__reduce__()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="HALF.Strategies.html#HALF.Strategies.sequence_gcn.UncertainGCN.__reduce_ex__"><code class="docutils literal notranslate"><span class="pre">__reduce_ex__()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="HALF.Strategies.html#HALF.Strategies.sequence_gcn.UncertainGCN.__repr__"><code class="docutils literal notranslate"><span class="pre">__repr__()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="HALF.Strategies.html#HALF.Strategies.sequence_gcn.UncertainGCN.__setattr__"><code class="docutils literal notranslate"><span class="pre">__setattr__()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="HALF.Strategies.html#HALF.Strategies.sequence_gcn.UncertainGCN.__sizeof__"><code class="docutils literal notranslate"><span class="pre">__sizeof__()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="HALF.Strategies.html#HALF.Strategies.sequence_gcn.UncertainGCN.__str__"><code class="docutils literal notranslate"><span class="pre">__str__()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="HALF.Strategies.html#HALF.Strategies.sequence_gcn.UncertainGCN.__subclasshook__"><code class="docutils literal notranslate"><span class="pre">__subclasshook__()</span></code></a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -270,10 +587,10 @@
                 </div>
                 <div class="title">HALF.Commons</div>
               </div>
-              <svg><use href="#svg-arrow-right"></use></svg>
+              <svg class="furo-related-icon"><use href="#svg-arrow-right"></use></svg>
             </a>
           <a class="prev-page" href="config.html">
-              <svg><use href="#svg-arrow-right"></use></svg>
+              <svg class="furo-related-icon"><use href="#svg-arrow-right"></use></svg>
               <div class="page-info">
                 <div class="context">
                   <span>Previous</span>
@@ -314,6 +631,7 @@
     <script src="_static/underscore.js"></script>
     <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
     <script src="_static/doctools.js"></script>
+    <script src="_static/sphinx_highlight.js"></script>
     <script src="_static/scripts/furo.js"></script>
     </body>
 </html>

@@ -2,13 +2,13 @@
 <html class="no-js" lang="en">
   <head><meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width,initial-scale=1"/>
-    <meta name="color-scheme" content="light dark"><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+    <meta name="color-scheme" content="light dark"><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
 <link rel="author" title="About these documents" href="about.html" /><link rel="index" title="Index" href="genindex.html" /><link rel="search" title="Search" href="search.html" /><link rel="next" title="HALF.Delegates" href="HALF.Delegates.html" /><link rel="prev" title="HALF" href="modules.html" />
 
-    <meta name="generator" content="sphinx-5.0.2, furo 2022.06.21"/>
+    <meta name="generator" content="sphinx-5.2.3, furo 2022.09.29"/>
         <title>HALF.Commons - HALF documentation</title>
       <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
-    <link rel="stylesheet" type="text/css" href="_static/styles/furo.css?digest=40978830699223671f4072448e654b5958f38b89" />
+    <link rel="stylesheet" type="text/css" href="_static/styles/furo.css?digest=d81277517bee4d6b0349d71bb2661d4890b5617c" />
     <link rel="stylesheet" type="text/css" href="_static/styles/furo-extensions.css?digest=30d1aed668e5c3a91c3e3bf6a60b675221979f0e" />
     
     
@@ -168,6 +168,7 @@
 <li class="toctree-l2"><a class="reference internal" href="HALF.Interfaces.html">HALF.Interfaces</a></li>
 <li class="toctree-l2"><a class="reference internal" href="HALF.Oracle.html">HALF.Oracle</a></li>
 <li class="toctree-l2"><a class="reference internal" href="HALF.Utils.html">HALF.Utils</a></li>
+<li class="toctree-l2"><a class="reference internal" href="HALF.Strategies.html">HALF.Strategies</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="about.html">About</a></li>
@@ -190,7 +191,8 @@
           <span>Back to top</span>
         </a>
         <div class="content-icon-container">
-          <div class="theme-toggle-container theme-toggle-content">
+          
+<div class="theme-toggle-container theme-toggle-content">
             <button class="theme-toggle">
               <div class="visually-hidden">Toggle Light / Dark / Auto color theme</div>
               <svg class="theme-icon-when-auto"><use href="#svg-sun-half"></use></svg>
@@ -228,11 +230,11 @@ the returned instance.</p>
 <dl class="py class">
 <dt class="sig sig-object py" id="HALF.Commons.const.ModelStrategy">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">HALF.Commons.const.</span></span><span class="sig-name descname"><span class="pre">ModelStrategy</span></span><a class="reference internal" href="_modules/HALF/Commons/const.html#ModelStrategy"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#HALF.Commons.const.ModelStrategy" title="Permalink to this definition">#</a></dt>
-<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Enum</span></code></p>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>, <code class="xref py py-class docutils literal notranslate"><span class="pre">Enum</span></code></p>
 <p>An enumeration.</p>
 <dl class="py attribute">
 <dt class="sig sig-object py" id="HALF.Commons.const.ModelStrategy.RESET">
-<span class="sig-name descname"><span class="pre">RESET</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">('reset',)</span></em><a class="headerlink" href="#HALF.Commons.const.ModelStrategy.RESET" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">RESET</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'reset'</span></em><a class="headerlink" href="#HALF.Commons.const.ModelStrategy.RESET" title="Permalink to this definition">#</a></dt>
 <dd></dd></dl>
 
 <dl class="py attribute">
@@ -293,10 +295,10 @@ the returned instance.</p>
                 </div>
                 <div class="title">HALF.Delegates</div>
               </div>
-              <svg><use href="#svg-arrow-right"></use></svg>
+              <svg class="furo-related-icon"><use href="#svg-arrow-right"></use></svg>
             </a>
           <a class="prev-page" href="modules.html">
-              <svg><use href="#svg-arrow-right"></use></svg>
+              <svg class="furo-related-icon"><use href="#svg-arrow-right"></use></svg>
               <div class="page-info">
                 <div class="context">
                   <span>Previous</span>
@@ -332,16 +334,37 @@ the returned instance.</p>
       <div class="toc-sticky toc-scroll">
         <div class="toc-title-container">
           <span class="toc-title">
-            Contents
+            On this page
           </span>
         </div>
         <div class="toc-tree-container">
           <div class="toc-tree">
             <ul>
 <li><a class="reference internal" href="#">HALF.Commons</a><ul>
-<li><a class="reference internal" href="#module-HALF.Commons.SingletonMeta">HALF.Commons.SingletonMeta</a></li>
-<li><a class="reference internal" href="#module-HALF.Commons.const">HALF.Commons.const</a></li>
-<li><a class="reference internal" href="#module-HALF.Commons.data">HALF.Commons.data</a></li>
+<li><a class="reference internal" href="#module-HALF.Commons.SingletonMeta">HALF.Commons.SingletonMeta</a><ul>
+<li><a class="reference internal" href="#HALF.Commons.SingletonMeta.SingletonMeta"><code class="docutils literal notranslate"><span class="pre">SingletonMeta</span></code></a><ul>
+<li><a class="reference internal" href="#HALF.Commons.SingletonMeta.SingletonMeta.__call__"><code class="docutils literal notranslate"><span class="pre">SingletonMeta.__call__()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a class="reference internal" href="#module-HALF.Commons.const">HALF.Commons.const</a><ul>
+<li><a class="reference internal" href="#HALF.Commons.const.ModelStrategy"><code class="docutils literal notranslate"><span class="pre">ModelStrategy</span></code></a><ul>
+<li><a class="reference internal" href="#HALF.Commons.const.ModelStrategy.RESET"><code class="docutils literal notranslate"><span class="pre">ModelStrategy.RESET</span></code></a></li>
+<li><a class="reference internal" href="#HALF.Commons.const.ModelStrategy.UPDATE"><code class="docutils literal notranslate"><span class="pre">ModelStrategy.UPDATE</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a class="reference internal" href="#module-HALF.Commons.data">HALF.Commons.data</a><ul>
+<li><a class="reference internal" href="#HALF.Commons.data.DataLogAccuracy"><code class="docutils literal notranslate"><span class="pre">DataLogAccuracy</span></code></a><ul>
+<li><a class="reference internal" href="#HALF.Commons.data.DataLogAccuracy.__init__"><code class="docutils literal notranslate"><span class="pre">DataLogAccuracy.__init__()</span></code></a></li>
+<li><a class="reference internal" href="#HALF.Commons.data.DataLogAccuracy.lb_dataset_size"><code class="docutils literal notranslate"><span class="pre">DataLogAccuracy.lb_dataset_size</span></code></a></li>
+<li><a class="reference internal" href="#HALF.Commons.data.DataLogAccuracy.test_acc"><code class="docutils literal notranslate"><span class="pre">DataLogAccuracy.test_acc</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -358,6 +381,7 @@ the returned instance.</p>
     <script src="_static/underscore.js"></script>
     <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
     <script src="_static/doctools.js"></script>
+    <script src="_static/sphinx_highlight.js"></script>
     <script src="_static/scripts/furo.js"></script>
     </body>
 </html>
