@@ -37,7 +37,7 @@ extensions = [
     'sphinx.ext.intersphinx'
 ]
 
-intersphinx_mapping = {'distil' : ('https://decile-team-distil.readthedocs.io/en/stable/', None)}
+intersphinx_mapping = {'distil' : ('https://decile-team-distil.readthedocs.io/en/latest/', None)}
 
 autosummary_generate = True
 
